@@ -23,9 +23,7 @@ export default function Hero(){
       </p>
     </div>
       <div>
-
       </div>
-      
     </div>
     <br />
     <div className="flex gap-5 text-sm">
@@ -34,7 +32,7 @@ export default function Hero(){
     </div>
     <div>
       <HeroStats/>
-      
+
     </div>
     
     </div>

@@ -1,11 +1,12 @@
-export default function YearOfExperience(){
+export default function ClientsServed(){
   return(
+    <>
     <>
       <div>
         <div>
           <h3 className="stats-header">
             <span>
-              6
+              2
             </span>
             <span>
               +
@@ -14,10 +15,11 @@ export default function YearOfExperience(){
         </div>
         <div>
           <p>
-            years of exprience 
+            Clients Served
           </p>
         </div>
       </div>
+    </>
     </>
   )
 }

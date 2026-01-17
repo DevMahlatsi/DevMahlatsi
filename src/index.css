@@ -27,3 +27,8 @@ html{
   padding-top: 0.5rem;
   gap: 1rem;
 }
+/* stats header */
+.stats-header{
+  font-size: 2rem;
+  color: #1a73e8;
+}

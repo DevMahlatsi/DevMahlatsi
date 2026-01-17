@@ -1,11 +1,11 @@
-export default function YearOfExperience(){
+export default function ProjectsShipped(){
   return(
     <>
       <div>
         <div>
           <h3 className="stats-header">
             <span>
-              6
+              16
             </span>
             <span>
               +
@@ -14,7 +14,7 @@ export default function YearOfExperience(){
         </div>
         <div>
           <p>
-            years of exprience 
+            projects built 
           </p>
         </div>
       </div>
