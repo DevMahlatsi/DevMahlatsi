@@ -1,5 +1,6 @@
 import DownCV from "../Buttons/Download CV/DownCV";
 import ViewWork from "../Buttons/View My Work/ViewMyWork";
+import HeroStats from "../Indicators/Hero stats/HeroStats";
 
 export default function Hero(){
   const name = "Lugisani Jeremiah Mahlatsi";
@@ -32,6 +33,7 @@ export default function Hero(){
       <DownCV/>
     </div>
     <div>
+      <HeroStats/>
       
     </div>
     
