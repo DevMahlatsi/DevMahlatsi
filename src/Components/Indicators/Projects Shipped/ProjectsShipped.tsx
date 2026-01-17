@@ -12,9 +12,9 @@ export default function ProjectsShipped(){
             </span>
           </h3>
         </div>
-        <div>
+        <div className="hero-stat-heading">
           <p>
-            projects built 
+            Projects Built 
           </p>
         </div>
       </div>

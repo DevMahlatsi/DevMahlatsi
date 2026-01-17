@@ -13,7 +13,7 @@ export default function ClientsServed(){
             </span>
           </h3>
         </div>
-        <div>
+        <div className="hero-stat-heading">
           <p>
             Clients Served
           </p>

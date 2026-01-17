@@ -30,6 +30,7 @@ export default function Hero(){
       <ViewWork/>
       <DownCV/>
     </div>
+    <br />
     <div>
       <HeroStats/>
 

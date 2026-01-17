@@ -12,9 +12,9 @@ export default function YearOfExperience(){
             </span>
           </h3>
         </div>
-        <div>
+        <div className="hero-stat-heading">
           <p>
-            years of exprience 
+            Years Of Experience 
           </p>
         </div>
       </div>

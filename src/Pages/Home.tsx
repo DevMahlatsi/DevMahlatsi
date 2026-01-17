@@ -12,6 +12,8 @@ export default function Home(){
       <br />
       <br />
       <Hero/>
+      {/* ////// 
+      // The about page*/}
       
     </>
   )
