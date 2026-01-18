@@ -4,11 +4,13 @@ import grayWork from '../../../assets/grayWork.svg';
 
 export default function Available(){
 
-  const [status, setStatus] = useState({
+
+  const [status, _setStatus] = useState({
     available: true,
     message: "Currently not available for freelance.",
     loading: true,
   });
+  
   if(!status.available){
     return(
       <>
