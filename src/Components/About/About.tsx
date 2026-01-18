@@ -1,6 +1,5 @@
-import AboutProjectsShipped from "../Indicators/Projects Shipped/AboutProjectsShipped/AboutProjectsShipped";
-import AboutYearsExperience from "../Indicators/Years Of Experience/About/AboutYearsExperience";
-import HeroYearOfExperience from "../Indicators/Years Of Experience/Hero/HeroYearsExperience";
+import AboutStats from "../Indicators/About-Stats/AboutStats";
+import ToolsAndTechnologies from "../Indicators/Tools and Technologies/ToolsAndTechnologies";
 
 export default function About(){
   return(
@@ -18,10 +17,10 @@ export default function About(){
             </p>
           </div>
           <br />
-          <div className="grid grid-cols-2 gap-2">
-            <AboutYearsExperience/>
-            <AboutProjectsShipped/>
-            <div></div>
+            <AboutStats/>
+          <br />
+          <div>
+            <ToolsAndTechnologies/>
           </div>
         </div>
       </div>
