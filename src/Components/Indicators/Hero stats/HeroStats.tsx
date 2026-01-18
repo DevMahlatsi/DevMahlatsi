@@ -1,14 +1,14 @@
 import ClientsServed from "../Clients Served/Clients";
-import ProjectsShipped from "../Projects Shipped/ProjectsShipped";
-import YearOfExperience from "../Years Of Experience/YearsExperience";
+import HeroProjectsShipped from "../Projects Shipped/HeroProjectsShipped/HeroProjectsShipped";
+import HeroYearOfExperience from "../Years Of Experience/Hero/HeroYearsExperience";
 
 export default function HeroStats(){
   return(
     <>
       <div className="flex gap-3">
-        <YearOfExperience/>
+        <HeroYearOfExperience/>
         <ClientsServed/>
-        <ProjectsShipped/>
+        <HeroProjectsShipped/>
       </div>
     </>
   )

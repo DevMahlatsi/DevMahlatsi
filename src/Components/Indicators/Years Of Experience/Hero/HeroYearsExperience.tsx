@@ -1,11 +1,11 @@
-export default function ProjectsShipped(){
+export default function HeroYearOfExperience(){
   return(
     <>
       <div>
         <div>
           <h3 className="stats-header">
             <span>
-              16
+              6
             </span>
             <span>
               +
@@ -14,7 +14,7 @@ export default function ProjectsShipped(){
         </div>
         <div className="hero-stat-heading">
           <p>
-            Projects Built 
+            Years Of Experience 
           </p>
         </div>
       </div>

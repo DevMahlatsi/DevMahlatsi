@@ -1,7 +1,7 @@
-export default function YearOfExperience(){
+export default function AboutYearsExperience(){
   return(
     <>
-      <div>
+      <div className="about-xxx">
         <div>
           <h3 className="stats-header">
             <span>

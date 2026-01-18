@@ -35,3 +35,15 @@ html{
 .hero-stat-heading{
   font-size: .8rem;
 }
+/* About */
+.about-intro{
+  color:#1a73e8;
+}
+.about-xxx{
+  padding: 1em;
+  border: solid #1a73e8 0.1rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
