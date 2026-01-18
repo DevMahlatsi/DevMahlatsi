@@ -5,7 +5,9 @@ export default function About(){
   return(
     <>
       <div className="grid grid-cols-2">
-        <div>this side is why I should be hired</div>
+        <div>this side is why I should be hired
+          I am fast, I am reliable
+        </div>
         <div>
           <div>
             <p>

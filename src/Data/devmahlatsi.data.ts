@@ -1,3 +1,32 @@
+export const hireReasons = [
+  {
+    id: 1, 
+    title: "User Centered",
+    description: "I design and build with the end user in mind, focusing on clarity, usability, and real-world needs rather than just technical novelty."
+  },
+  {
+    id: 2,
+    title: "Fast Delivery",
+    description: "I work iteratively and ship features quickly, prioritizing progress and feedback without sacrificing stability."
+  },
+  {
+    id: 3,
+    title: "Quality Driven",
+    description: "I care about clean code, thoughtful architecture, and solutions that are reliable, maintainable, and built to last."
+  },
+  {
+    id: 4,
+    title: "Problem Solver",
+    description: "I enjoy breaking down complex problems into manageable parts and turning them into practical, working solutions."
+  },
+  {
+    id: 5,
+    title: "Always Learning",
+    description: "I continuously improve my skills by learning new tools and technologies and applying them to real projects."
+  }
+];
+
+
 export const techToolsData = [
   {
     id: 1,
