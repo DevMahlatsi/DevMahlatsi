@@ -1,7 +1,7 @@
 import userCentered from "../assets/userCentered.svg";
 import fastDelivery from "../assets/fastDelivery.svg";
 import qualityDriven from "../assets/qualityDriven.svg";
-import problemSolver from "../assets/problemSolver.svg":
+import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
 
 export const hireReasons = [
@@ -9,7 +9,7 @@ export const hireReasons = [
 
   {
     id: 1,
-    icon: alwaysLearning,
+    icon: userCentered,
     title: "User Centered",
     description: "I design and build with the end user in mind, focusing on clarity, usability, and real-world needs rather than just technical novelty."
 
