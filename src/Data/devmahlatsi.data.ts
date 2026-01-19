@@ -5,40 +5,38 @@ import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
 
 export const hireReasons = [
-
-
   {
     id: 1,
     icon: userCentered,
     title: "User Centered",
-    description: "I design and build with the end user in mind, focusing on clarity, usability, and real-world needs rather than just technical novelty."
-
+    description: "I build with real users in mind, focusing on clarity and usability."
   },
   {
     id: 2,
     icon: fastDelivery,
     title: "Fast Delivery",
-    description: "I work iteratively and ship features quickly, prioritizing progress and feedback without sacrificing stability."
+    description: "I work iteratively to ship features quickly and reliably."
   },
   {
     id: 3,
     icon: qualityDriven,
     title: "Quality Driven",
-    description: "I care about clean code, thoughtful architecture, and solutions that are reliable, maintainable, and built to last."
+    description: "I write clean, maintainable code that is built to last."
   },
   {
     id: 4,
     icon: problemSolver,
     title: "Problem Solver",
-    description: "I enjoy breaking down complex problems into manageable parprots and turning them into practical, working solutions."
+    description: "I break down complex problems into simple, workable solutions."
   },
   {
     id: 5,
     icon: alwaysLearning,
     title: "Always Learning",
-    description: "I continuously improve my skills by learning new tools and technologies and applying them to real projects."
+    description: "I keep improving by learning and applying new technologies."
   }
 ];
+
 
 
 export const techToolsData = [
