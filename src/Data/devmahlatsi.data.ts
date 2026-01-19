@@ -5,12 +5,12 @@ import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
 
 export const hireReasons = [
-  {
-    id: 1,
-    icon: userCentered,
-    title: "User Centered",
-    description: "I build with real users in mind, focusing on clarity and usability."
-  },
+  // {
+  //   id: 1,
+  //   icon: userCentered,
+  //   title: "User Centered",
+  //   description: "I build with real users in mind, focusing on clarity and usability."
+  // },
   {
     id: 2,
     icon: fastDelivery,

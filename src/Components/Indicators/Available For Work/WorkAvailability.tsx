@@ -6,7 +6,7 @@ export default function Available(){
 
 
   const [status, _setStatus] = useState({
-    available: true,
+    available: false,
     message: "Currently not available for freelance.",
     loading: true,
   });

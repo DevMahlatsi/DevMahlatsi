@@ -1,7 +1,7 @@
 export default function AboutYearsExperience(){
   return(
     <>
-      <div className="about-xxx">
+      <div className="about-xxx bg-[#272727]">
         <div>
           <h3 className="stats-header">
             <span>
