@@ -15,7 +15,7 @@ export default function ToolsAndTechnologies(){
           <ul className="flex flex-wrap gap-3 ">
             {techToolsData.map((tool) => {
               return(
-                <li className="text-sm p-1 px-2 border border-[#1a73e8] rounded-4xl tech-edit">
+                <li className="text-sm p-1 px-2 bg-[#272727] border border-[#1a73e8] rounded-4xl tech-edit">
                   
                   {tool.title}
                 </li>
