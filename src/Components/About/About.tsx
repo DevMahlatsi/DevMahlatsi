@@ -6,9 +6,9 @@ export default function About(){
   return(
     <>
       <div className="grid grid-cols-2">
-        <div>
-          <HireReasons/>
-        </div>
+          <div>
+            <HireReasons/>
+          </div>
         <div>
           <div>
             <p>
