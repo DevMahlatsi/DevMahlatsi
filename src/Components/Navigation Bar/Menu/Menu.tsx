@@ -4,7 +4,7 @@ export default function Menu(){
   return(
     <>
       <div>
-        <ul className="text-sm md:text-3xl flex gap-1 sm:gap-3">
+        <ul className="text-sm md:text-2xl flex md:gap-8 gap-5">
           {menuData.map((menu, index) => {
             return(
               <>
