@@ -4,6 +4,60 @@ import qualityDriven from "../assets/qualityDriven.svg";
 import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
 
+export const skill = [
+  {
+    id: 1, 
+    title: "Web Development",
+    description: [
+      "Building responsive, interactive web applications",
+      "Intergrating front-end interfaces with backend-end services",
+      "Focusing on performance, accessibility, and usability"
+    ]
+  },
+  {
+    id: 2,
+    title: "Mobile Development",
+    description: [
+      "Designing interfaces that work well on small screens",
+      "Ensuring smooth interactions across different devices",
+      "Adapting layouts and features for touch-based use"
+    ]
+  },
+  // {
+  //   id: 3,
+  //   title: "Desktop Applications",
+  //   description: [
+
+  //   ]
+  // },
+  {
+    id: 4,
+    title: "UI Implementation",
+    description:[
+      "Translating designs into usable interfaces",
+      "Caring about spacing, hirearchy, and interaction",
+      "Iterating when something feels wrong"
+    ]
+  },{
+    id: 5,
+    title: "Backend & APIs",
+    description: [
+      "Designing and consuming RESTful APIs",
+      "Handling data flow between the client and server",
+      "Working with databases to store and retrieve data"
+    ]
+  },
+  {
+    id: 6,
+    title: "UX-Aware Design",
+    description: ["Thiking through user flows and edge cases",
+    "Reducing friction in common interactions",
+    "Improving experiences through iteration and feedback"
+    ]
+  }
+]
+
+
 export const hireReasons = [
   // {
   //   id: 1,
