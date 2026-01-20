@@ -1,14 +1,13 @@
-export default function GetToKnowMe(){
+export default function MySkills(){
   return(
     <>
       <div className="page-heading">
-        <div className="heading-description " >
+        <div className="heading-description" >
           <h1>
-            Get to know me.
+            What do I do?
           </h1>
         </div>
       </div>
-      
     </>
   )
 }

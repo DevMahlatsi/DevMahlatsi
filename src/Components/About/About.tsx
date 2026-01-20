@@ -5,7 +5,7 @@ import ToolsAndTechnologies from "../Indicators/Tools and Technologies/ToolsAndT
 export default function About(){
   return(
     <>
-      <div className="grid grid-cols-2">
+      <div className="flex flex-col-reverse sm:grid grid:cols-1 gap-4 sm:grid-cols-2">
           <div>
             <HireReasons/>
           </div>

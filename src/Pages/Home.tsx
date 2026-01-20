@@ -4,6 +4,7 @@ import NavigationBar from "../Components/Navigation Bar/NavigationBar";
 import GetToKnowMe from "../Components/Indicators/Get To know me/GetToKnowMe";
 import About from "../Components/About/About";
 import UnderConstruction from "../Components/Under Construction/UnderConstruction";
+import MySkills from "../Components/Indicators/My Skills/MySkills";
 
 export default function Home(){
   return(
@@ -24,6 +25,11 @@ export default function Home(){
       <GetToKnowMe/>
       <br /><br />
       <About/>
+      <br /><br /><br />
+        {/* ////
+        // The skills page */}
+      <MySkills/>
+      <br /><br />
     </>
   )
 }
