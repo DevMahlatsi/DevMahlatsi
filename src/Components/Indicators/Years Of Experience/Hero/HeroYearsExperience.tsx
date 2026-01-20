@@ -14,7 +14,7 @@ export default function HeroYearOfExperience(){
         </div>
         <div className="hero-stat-heading">
           <p>
-            Years Of Experience 
+            Years Of Coding 
           </p>
         </div>
       </div>
