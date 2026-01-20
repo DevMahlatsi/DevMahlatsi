@@ -3,8 +3,8 @@ import { hireReasons } from "../../../Data/devmahlatsi.data";
 export default function HireReasons(){
   return(
     <>
-    <div className="flex justify-center ">
-      <div className="inline-gridh justify-center items-center gap-2 border border-[#1a73e8] rounded-xl p-5">
+    <div className="flex justify-center">
+      <div className=" inline-grid  justify-center items-center gap-2 border border-[#1a73e8] rounded-xl p-5">
         {hireReasons.map((reason) => {
           return(
           <div>
