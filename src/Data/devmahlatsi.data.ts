@@ -4,7 +4,7 @@ import uiImplementation from "../assets/userInterface.svg";
 import backendApi from "../assets/backendApi.svg";
 import uxAwareDesign from "../assets/uiUxDesign.svg";
 
-import userCentered from "../assets/userCentered.svg";
+// import userCentered from "../assets/userCentered.svg";
 import fastDelivery from "../assets/fastDelivery.svg";
 import qualityDriven from "../assets/qualityDriven.svg";
 import problemSolver from "../assets/problemSolver.svg";
