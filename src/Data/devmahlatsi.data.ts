@@ -1,12 +1,19 @@
+import webDevelopment from "../assets/webDevelopment.svg";
+import mobileDevelopment from "../assets/mobileDevelopment.svg";
+import uiImplementation from "../assets/userInterface.svg";
+import backendApi from "../assets/backendApi.svg";
+import uxAwareDesign from "../assets/uiUxDesign.svg";
+
 import userCentered from "../assets/userCentered.svg";
 import fastDelivery from "../assets/fastDelivery.svg";
 import qualityDriven from "../assets/qualityDriven.svg";
 import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
 
-export const skill = [
+export const skills = [
   {
     id: 1, 
+    icon: webDevelopment,
     title: "Web Development",
     description: [
       "Building responsive, interactive web applications",
@@ -16,6 +23,7 @@ export const skill = [
   },
   {
     id: 2,
+    icon: mobileDevelopment,
     title: "Mobile Development",
     description: [
       "Designing interfaces that work well on small screens",
@@ -32,6 +40,7 @@ export const skill = [
   // },
   {
     id: 4,
+    icon: uiImplementation,
     title: "UI Implementation",
     description:[
       "Translating designs into usable interfaces",
@@ -40,6 +49,7 @@ export const skill = [
     ]
   },{
     id: 5,
+    icon: backendApi,
     title: "Backend & APIs",
     description: [
       "Designing and consuming RESTful APIs",
@@ -49,6 +59,7 @@ export const skill = [
   },
   {
     id: 6,
+    icon: uxAwareDesign,
     title: "UX-Aware Design",
     description: ["Thiking through user flows and edge cases",
     "Reducing friction in common interactions",

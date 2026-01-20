@@ -5,6 +5,7 @@ import GetToKnowMe from "../Components/Indicators/Get To know me/GetToKnowMe";
 import About from "../Components/About/About";
 import UnderConstruction from "../Components/Under Construction/UnderConstruction";
 import MySkills from "../Components/Indicators/My Skills/MySkills";
+import Skills from "../Components/Skills/Skills";
 
 export default function Home(){
   return(
@@ -30,6 +31,8 @@ export default function Home(){
         // The skills page */}
       <MySkills/>
       <br /><br />
+      <Skills/>
     </>
+
   )
 }
