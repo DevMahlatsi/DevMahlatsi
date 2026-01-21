@@ -24,9 +24,12 @@ export default function NavigationBar(){
       <Burger
         onToggle={handleToggle} currentValue={isOpen} />
       </div>
-      <VMenu
+      <div className="relative">
+        <VMenu
         isOpen = {isOpen}
         />
+      </div>
+      
       
 
     </header>

@@ -5,7 +5,7 @@ export default function VMenu({ isOpen}: readerProps){
   if(isOpen)
   return(
     <>
-    <div className="bg-[#272727]">
+    <div className="bg-[#272727] absolute right-0">
       <ul className="text-sm grid grid-cols-[max-content]">
                 {menuData.map((menu, index) => {
                   return(
