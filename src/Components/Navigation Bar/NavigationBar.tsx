@@ -1,4 +1,5 @@
-import LetsTalk from "../Buttons/Lets Talk/LetsTalk";
+import Burger from "./Burger/BurgerIcon";
+import LetsTalk from "./Lets Talk/LetsTalk";
 import Logo from "./Logo/Logo";
 import Menu from "./Menu/Menu";
 
@@ -12,6 +13,7 @@ export default function NavigationBar(){
       <Logo/>
       <Menu/>
       <LetsTalk/>
+      <Burger/>
       </div>
       
 

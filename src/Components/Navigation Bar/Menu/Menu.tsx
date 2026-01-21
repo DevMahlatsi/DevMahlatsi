@@ -3,7 +3,7 @@ import { menuData } from "../../../Data/devmahlatsi.data";
 export default function Menu(){
   return(
     <>
-      <div>
+      <div className="hidden md:block">
         <ul className="text-sm md:text-xl flex md:gap-8 gap-5">
           {menuData.map((menu, index) => {
             return(
@@ -14,6 +14,7 @@ export default function Menu(){
           })}
         </ul>
       </div>
+      
     </>
   )
 }

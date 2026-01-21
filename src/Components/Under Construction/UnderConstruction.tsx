@@ -12,7 +12,7 @@ export default function UnderConstruction() {
     return (
       <div className="bg-red-600 flex justify-between items-center p-2">
         <h1 className="text-center text-2xl text-white">
-          This website is still under construction.
+          Website under construction.
         </h1>
         <img
           className="h-8 cursor-pointer"
