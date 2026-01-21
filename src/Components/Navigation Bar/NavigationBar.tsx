@@ -9,6 +9,10 @@ import VMenu from "./Menu/VerticalMenu";
 export default function NavigationBar(){
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleToggle = () =>{
+    setIsOpen(prev => !prev);
+  }
+
   return(
     <>
     <header>
@@ -17,9 +21,11 @@ export default function NavigationBar(){
       <Logo/>
       <Menu/>
       <LetsTalk/>
-      <Burger/>
+      <Burger
+        onToggle={handleToggle} currentValue={isOpen}/>
       </div>
       <VMenu
+        isOpen = {isOpen}
         />
       
 
