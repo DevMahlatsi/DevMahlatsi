@@ -22,7 +22,7 @@ export default function NavigationBar(){
       <Menu/>
       <LetsTalk/>
       <Burger
-        onToggle={handleToggle} currentValue={isOpen}/>
+        onToggle={handleToggle} currentValue={isOpen} />
       </div>
       <VMenu
         isOpen = {isOpen}
