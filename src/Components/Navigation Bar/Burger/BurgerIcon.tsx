@@ -10,7 +10,7 @@ export default function Burger(){
       <div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className='p-2 text-2xl'
+          className=' text-4xl'
           >
           {isMenuOpen ? <FiX /> : <FiMenu/>}
         </button>

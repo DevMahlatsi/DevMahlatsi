@@ -1,10 +1,14 @@
+import { useState } from "react";
 import Burger from "./Burger/BurgerIcon";
 import LetsTalk from "./Lets Talk/LetsTalk";
 import Logo from "./Logo/Logo";
 import Menu from "./Menu/Menu";
+import VMenu from "./Menu/VerticalMenu";
 
 
 export default function NavigationBar(){
+  const [isOpen, setIsOpen] = useState(false);
+
   return(
     <>
     <header>
@@ -15,6 +19,8 @@ export default function NavigationBar(){
       <LetsTalk/>
       <Burger/>
       </div>
+      <VMenu
+        />
       
 
     </header>
