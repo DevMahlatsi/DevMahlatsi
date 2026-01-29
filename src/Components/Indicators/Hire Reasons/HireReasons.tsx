@@ -20,7 +20,7 @@ export default function HireReasons(){
                     {reason.title}
                   </strong>
                 </h1>
-                <p>
+                <p className="text-sm">
                   {reason.description}
                 </p>
                 </div>

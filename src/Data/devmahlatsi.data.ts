@@ -10,6 +10,34 @@ import qualityDriven from "../assets/qualityDriven.svg";
 import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
 
+export const designProcess = [
+  {
+    id: 1,
+    title: "Design",
+    description: "Understanding the problem, defining requirements, and thinking through user experience."
+  },
+  {
+    id: 2,
+    title: "Build",
+    description: "Developing the solution with clean, maintainable code and clear structure",
+
+  },
+  {
+    id: 3,
+    title: "Refine",
+    description: "Testing, iterating, and improving usability, performance, and details"
+  },
+  {
+    id: 4,
+    title: "Deliver",
+    description: "Shipping a stable, polished, solution ready for real-world use."
+  }
+]
+
+export const portfolio = [
+  
+]
+
 export const skills = [
   {
     id: 1, 
