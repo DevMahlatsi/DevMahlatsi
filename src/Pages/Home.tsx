@@ -32,6 +32,7 @@ export default function Home(){
       <MySkills/>
       <br /><br />
       <Skills/>
+      <br /><br />
     </>
 
   )

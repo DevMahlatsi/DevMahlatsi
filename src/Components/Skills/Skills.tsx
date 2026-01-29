@@ -4,7 +4,7 @@ import SkillsCard from "./SkillsCard";
 export default function Skills(){
   return(
     <>
-      <div className="flex flex-row flex-wrap gap-3 justify-center">
+      <div className="flex flex-row flex-wrap gap-8 justify-center">
         {skills.map((skill) => {
           return(
             <>
