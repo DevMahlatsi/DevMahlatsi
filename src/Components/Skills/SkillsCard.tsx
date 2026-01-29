@@ -1,4 +1,4 @@
-import { ImGift } from "react-icons/im";
+
 import type { skillsProps } from "../../Props/devmahlatsi.props";
 
 export default function({id, title, icon, description}: skillsProps){
