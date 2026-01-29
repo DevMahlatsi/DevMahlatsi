@@ -15,56 +15,36 @@ export const skills = [
     id: 1, 
     icon: webDevelopment,
     title: "Web Development",
-    description: [
-      "Building responsive, interactive web applications",
-      "Intergrating front-end interfaces with backend-end services",
-      "Focusing on performance, accessibility, and usability"
-    ]
+    description: ["Responsive applications", "Frontend-backend integration", "Performance optimization"]
   },
   {
     id: 2,
     icon: mobileDevelopment,
     title: "Mobile Development",
-    description: [
-      "Designing interfaces that work well on small screens",
-      "Ensuring smooth interactions across different devices",
-      "Adapting layouts and features for touch-based use"
-    ]
+    description: ["Mobile interfaces", "Cross-device compatibility", "Touch optimization"]
   },
   // {
   //   id: 3,
   //   title: "Desktop Applications",
-  //   description: [
-
-  //   ]
+  //   description: []
   // },
   {
     id: 4,
     icon: uiImplementation,
     title: "UI Implementation",
-    description:[
-      "Translating designs into usable interfaces",
-      "Caring about spacing, hirearchy, and interaction",
-      "Iterating when something feels wrong"
-    ]
-  },{
+    description: ["Design translation", "Visual hierarchy", "Iterative refinement"]
+  },
+  {
     id: 5,
     icon: backendApi,
     title: "Backend & APIs",
-    description: [
-      "Designing and consuming RESTful APIs",
-      "Handling data flow between the client and server",
-      "Working with databases to store and retrieve data"
-    ]
+    description: ["API design", "Data flow", "Database management"]
   },
   {
     id: 6,
     icon: uxAwareDesign,
     title: "UX-Aware Design",
-    description: ["Thiking through user flows and edge cases",
-    "Reducing friction in common interactions",
-    "Improving experiences through iteration and feedback"
-    ]
+    description: ["User flows", "Friction reduction", "Feedback iteration"]
   }
 ]
 
