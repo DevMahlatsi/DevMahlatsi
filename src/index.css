@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 html{
-  margin-left: 15px ;
-  margin-right: 15px;
+  margin-left: 10px ;
+  margin-right: 10px;
   /* font-family:Arial, Helvetica, sans-serif; */
   background-color: black;
   /* color: #1a73e8; */
@@ -76,7 +76,7 @@ html{
   padding-left: 5px;
   padding-right: 5px;
   font-size: 0.875rem;
-  height: 30px;
+  height: 35px;
 
 }
 .edtInput:focus{
@@ -85,11 +85,31 @@ html{
   
   
 }
-.lblForm{
+.edtInput2{
+  background-color: #272727;
+  border-radius: 15px;
+  border-color: #808080;
+  /* color: #1a73e8; */
+  border-width: 2px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
   font-size: 0.875rem;
+  /* height: 30px; */
+
+}
+.edtInput2:focus{
+  border: solid 2px #1a73e8;
+  outline: none;
+  
+  
+}
+
+.lblForm{
+  font-size: 1rem;
 }
 .lblnEdt{
   display: flex;
   flex-direction: column;
-  gap: 2;
+  gap: 1rem;
 }

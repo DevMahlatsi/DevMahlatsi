@@ -20,15 +20,11 @@ export default function Home(){
     <>
       <UnderConstruction/>
       <NavigationBar/>
-      <br />
-      <br />
+      <br /><br />
       <Available/>
-      <br />
-      <br />
+      <br /><br />
       <Hero/>
-      <br />
-      <br />
-      <br />
+      <br /><br /><br />
       {/* ////// 
       // The about page*/}
       <GetToKnowMe/>

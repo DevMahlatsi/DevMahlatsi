@@ -1,21 +1,22 @@
+import { IoIosSend } from "react-icons/io";
 import { projectTypes } from "../../Data/devmahlatsi.data";
 
 export default function ContactForm(){
   return(
     <>
     <div>
-      <form action="" method="post" className="flex flex-col gap-4">
+      <form action="" method="post" className="flex flex-col gap-4 border border-[#1a73e8] p-4 rounded-2xl">
         <div className="lblnEdt">
           <label className="lblForm" htmlFor="clientName">
-          Name: 
+          Your Name: 
         </label>
-        <input className="edtInput" type="text" name="clientName" id="clientName" />
+        <input placeholder="John Doe" className="edtInput" type="text" name="clientName" id="clientName" />
         </div>
         <div className="lblnEdt">
           <label className="lblForm" htmlFor="clientEmail">
-          Email: 
+          Email Address: 
         </label>
-        <input className="edtInput" type="email" name="clientEmail" id="clientEmail" />
+        <input placeholder="JohnDoe@email.com" className="edtInput" type="email" name="clientEmail" id="clientEmail" />
         </div>
         <div className="lblnEdt">
           <label className="lblForm" htmlFor="clientProject">
@@ -37,10 +38,18 @@ export default function ContactForm(){
           <label htmlFor="userMessage">
             Message
           </label>
-          <textarea className="edtInput" name="userMessage" id="userMessage"></textarea>
+          <textarea placeholder="Describe the selected project from above a bit more." className="edtInput2" name="userMessage" id="userMessage" rows={8}>
+            
+          </textarea>
         </div>
         
-
+          <div className="flex justify-center">
+            <button className="w-full p-1 rounded-2xl bg-[#1a73e8] flex justify-center items-center" type="submit">
+              <span>Submit</span>
+              <IoIosSend />
+            </button>
+            
+          </div>
       </form>
     </div>
     </>
