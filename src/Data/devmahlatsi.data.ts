@@ -10,6 +10,30 @@ import qualityDriven from "../assets/qualityDriven.svg";
 import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
 
+export const projectTypes = [
+  {
+    id: 1,
+    value: "Website",
+    name: "Website",
+  },
+  {
+    id: 2,
+    value: "Web Application",
+    name: "Web Application",
+  },
+  {
+    id: 3,
+    value: "Mobile App",
+    name: "Mobile App",
+  },
+  {
+    id: 4,
+    value: "Backend / API",
+    name: "Backend / API",
+  },
+];
+
+
 export const designProcess = [
   {
     id: 1,

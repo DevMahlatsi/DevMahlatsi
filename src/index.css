@@ -65,3 +65,10 @@ html{
   padding-right: 1rem;
   font-size: 0.875rem;
 }
+/* styling for form input */
+.edtInput{
+  background-color: #272727
+}
+.lblForm{
+  
+}

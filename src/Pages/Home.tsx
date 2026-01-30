@@ -1,17 +1,19 @@
 import Available from "../Components/Indicators/Available For Work/WorkAvailability";
 import Hero from "../Components/Hero/Hero";
 import NavigationBar from "../Components/Navigation Bar/NavigationBar";
-import GetToKnowMe from "../Components/Indicators/Get To know me/GetToKnowMe";
+import GetToKnowMe from "../Components/Indicators/Page Headings/Get To know me/GetToKnowMe";
 import About from "../Components/About/About";
 import UnderConstruction from "../Components/Under Construction/UnderConstruction";
-import MySkills from "../Components/Indicators/My Skills/MySkills";
+import MySkills from "../Components/Indicators/Page Headings/My Skills/MySkills";
 import Skills from "../Components/Skills/Skills";
-import PersonalProjects from "../Components/Indicators/Personal Project Banner/PersonalProject";
+import PersonalProjects from "../Components/Indicators/Page Banners/Personal Project Banner/PersonalProject";
 import DiscussProject from "../Components/Buttons/Discuss Project/DiscussProject";
-import RecentWork from "../Components/Indicators/Recent Work/RecentWork";
-import SelectedProjectsBanner from "../Components/Indicators/Selection Projects in Mind/SelectedProjectsBanner";
-import DesignProcess from "../Components/Indicators/Design Process/DesignProcess";
+import RecentWork from "../Components/Indicators/Page Headings/Recent Work/RecentWork";
+import SelectedProjectsBanner from "../Components/Indicators/Page Banners/Selection Projects in Mind/SelectedProjectsBanner";
+import DesignProcess from "../Components/Indicators/Page Headings/Design Process/DesignProcess";
 import ProcessDesign from "../Components/Design Process/DesignProcess";
+import ContactMe from "../Components/Indicators/Page Headings/Contact Me/ContactMe";
+import Contact from "../Components/Contact/Contact";
 
 export default function Home(){
   return(
@@ -49,6 +51,11 @@ export default function Home(){
       <DesignProcess/>
       <br /><br />
       <ProcessDesign/>
+      <br /><br />
+      <ContactMe/>
+      <br /><br />
+      <Contact/>
+      <br /><br /><br /><br /><br /><br /><br /><br />
     </>
 
   )
