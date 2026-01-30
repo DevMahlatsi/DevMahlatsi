@@ -67,8 +67,29 @@ html{
 }
 /* styling for form input */
 .edtInput{
-  background-color: #272727
+  background-color: #272727;
+  border-radius: 15px;
+  border-color: #808080;
+  /* color: #1a73e8; */
+  border-width: 2px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 0.875rem;
+  height: 30px;
+
+}
+.edtInput:focus{
+  border: solid 2px #1a73e8;
+  outline: none;
+  
+  
 }
 .lblForm{
-  
+  font-size: 0.875rem;
+}
+.lblnEdt{
+  display: flex;
+  flex-direction: column;
+  gap: 2;
 }
