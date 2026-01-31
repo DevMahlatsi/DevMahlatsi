@@ -5,7 +5,7 @@ export default function ContactForm(){
   return(
     <>
     <div>
-      <form action="" method="post" className="flex flex-col gap-4 border border-[#1a73e8] p-4 rounded-2xl">
+      <form method="post" className="flex flex-col gap-4 border border-[#1a73e8] p-4 rounded-2xl">
         <div className="lblnEdt">
           <label className="lblForm" htmlFor="clientName">
           Your Name: 

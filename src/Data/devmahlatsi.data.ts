@@ -1,3 +1,5 @@
+
+
 import webDevelopment from "../assets/webDevelopment.svg";
 import mobileDevelopment from "../assets/mobileDevelopment.svg";
 import uiImplementation from "../assets/userInterface.svg";
@@ -9,6 +11,9 @@ import fastDelivery from "../assets/fastDelivery.svg";
 import qualityDriven from "../assets/qualityDriven.svg";
 import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
+
+
+
 
 export const projectTypes = [
   {
