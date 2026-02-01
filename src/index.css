@@ -115,8 +115,23 @@ html{
 }
 /* Lets connect styling  */
 /* React icons for Let's connect */
-.lc-icon{
+.parent{
+  background-color: #272727;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  padding: .5rem;
+}
+.lc-icon-parent{
   background-color: #1a73e8;
-  height: 1.75rem;
-  width: auto;
+  display: inline-block;
+  padding: .5rem;
+  border-radius: 100%;
+}
+.lc-icon{
+  /* background-color: ; */
+
+  height: 2rem;
+  width: 2rem;
+  
 }
