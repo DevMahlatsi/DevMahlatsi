@@ -7,6 +7,7 @@ export default function Hero(){
   return(
 
     <>
+    <br /><br />
     <div>
       <div className="grid grid-cols-2 text-[#ffffff]">
       <div>

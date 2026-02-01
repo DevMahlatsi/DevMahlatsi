@@ -1,11 +1,16 @@
 import AboutStats from "../Indicators/About-Stats/AboutStats";
 import HireReasons from "../Indicators/Hire Reasons/HireReasons";
+import GetToKnowMe from "../Indicators/Page Headings/Get To know me/GetToKnowMe";
 import ToolsAndTechnologies from "../Indicators/Tools and Technologies/ToolsAndTechnologies";
 
 export default function About(){
   return(
     <>
+    <br /><br /><br />
+    <GetToKnowMe/>
+    <br /><br />
       <div className="flex flex-col-reverse sm:grid grid:cols-1 gap-4 sm:grid-cols-2">
+        
           <div>
             <HireReasons/>
           </div>
