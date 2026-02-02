@@ -8,12 +8,11 @@ export default function VMenu({ isOpen}: readerProps){
   return(
     <>
     
-    <div className="bg-[#272727] absolute right-0 mt-0.5 h-full flex flex-col justify-between">
+    <div className="bg-[#272727] absolute right-0 mt-0.5  flex flex-col justify-between">
       <div >
         <div className="flex justify-center">
           <Logo/>
         </div>
-        
       <ul className="text-sm grid grid-cols-[max-content]">
                 {menuData.map((menu, index) => {
                   return(
@@ -23,16 +22,14 @@ export default function VMenu({ isOpen}: readerProps){
                         <li key={index} className="border px-20 py-5" >{menu.title}</li>
                       </ul>
                     </div>
-                      
-                      
                     </>
                   )
                 })}
               </ul>
-      </div>
-      
-      <div>
-        <MobTalk/>
+              <div>
+                <MobTalk/>
+              </div>
+              
       </div>
     </div>
       
