@@ -7,7 +7,7 @@ import VMenu from "./Menu/VerticalMenu";
 
 
 export default function NavigationBar(){
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () =>{
     setIsOpen(prev => !prev);

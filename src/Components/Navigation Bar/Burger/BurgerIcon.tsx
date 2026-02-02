@@ -10,7 +10,7 @@ export default function Burger({onToggle, currentValue}: updateProps) {
 
   return(
     <>
-      <div className='block md:hidden'>
+      <div className='block sm:hidden'>
         <button
           onClick={handleClick}
           className=' text-4xl'
