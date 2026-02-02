@@ -10,7 +10,7 @@ export default function UnderConstruction() {
 
   if (showBanner) {
     return (
-      <div className="bg-red-600 flex justify-between items-center p-2">
+      <div className="bg-amber-500 flex justify-between items-center p-2">
         <h1 className="text-center text-2xl text-white">
           Website under construction.
         </h1>
