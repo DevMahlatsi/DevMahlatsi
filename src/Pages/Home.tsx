@@ -32,7 +32,6 @@ export default function Home(){
       {/* Design process page */}
 
       <Design/>
-        \
 
         {/* contact page */}
 
