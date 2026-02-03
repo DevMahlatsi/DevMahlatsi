@@ -9,6 +9,7 @@ import Contact from "../Components/Contact/Contact";
 import Services from "../Components/Services/Services";
 import Portfolio from "../Components/Portfolio/Portfolio";
 import Design from "../Components/Design Process/Design";
+import Footer from "../Components/Footer/Footer";
 
 export default function Home(){
   return(
@@ -37,6 +38,8 @@ export default function Home(){
 
       
       <Contact/>
+      <br /><br />
+      <Footer/>
       
     </>
 
