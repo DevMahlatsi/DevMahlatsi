@@ -186,6 +186,14 @@ export const techToolsData = [
     id: 11,
     title: "Java",
   },
+  {
+    id: 12,
+    title: "Kotlin"
+  },
+  {
+    id: 13,
+    title: ""
+  }
 ];
 
 
