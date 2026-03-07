@@ -70,7 +70,7 @@ export const projects = [
 
   {
     id: "ai-content-studio",
-    title: "AI Content Studio",
+    title: "Agro-Smart",
     slug: "ai-content-studio",
     description: "A machine learning powered platform that generates SEO-optimized blog drafts based on user keywords and content goals.",
     shortDescription: "AI platform for generating SEO-optimized content.",
@@ -108,7 +108,7 @@ export const projects = [
 
   {
     id: "portfolio-site",
-    title: "Developer Portfolio Website",
+    title: "Campus Lab & Class management system",
     slug: "developer-portfolio",
     description: "A personal developer portfolio showcasing projects, technical skills, and achievements.",
     shortDescription: "Personal portfolio built with React and modern UI tools.",
