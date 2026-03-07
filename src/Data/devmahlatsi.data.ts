@@ -13,7 +13,136 @@ import problemSolver from "../assets/problemSolver.svg";
 import alwaysLearning from "../assets/alwaysLearning.svg";
 
 
+export const projects = [
+  {
+    id: "kokoro-stream",
+    title: "Kokoro Stream",
+    slug: "kokoro-stream",
+    description: "An automated greenhouse monitoring system that collects environmental sensor data and provides real-time analytics for optimal crop management.",
+    shortDescription: "Automated greenhouse monitoring system with real-time analytics.",
+    
+    status: "completed",
+    featured: true,
+    category: "iot",
+    year: 2026,
+    duration: "3 months",
 
+    team: {
+      type: "group",
+      teamSize: 3,
+      role: "Frontend Developer & API Integration",
+      responsibilities: [
+        "Developed the React dashboard for monitoring greenhouse data",
+        "Integrated backend API for sensor data visualization",
+        "Designed responsive UI using Tailwind CSS"
+      ]
+    },
+
+    problem: "Farmers often struggle to monitor greenhouse conditions remotely, leading to inefficient irrigation and poor crop health.",
+    solution: "Built an IoT-based monitoring system that collects sensor data such as temperature, humidity, and soil moisture and displays it in a web dashboard with automated alerts.",
+
+    techStack: ["React", "Tailwind CSS", "Node.js", "Django", "SQL", "IoT Sensors"],
+    features: [
+      "Real-time greenhouse environmental monitoring",
+      "Automated alerts for abnormal conditions",
+      "Historical data analytics dashboard",
+      "Remote monitoring via web interface"
+    ],
+
+    images: [
+      "/projects/greenhouse/dashboard.png",
+      "/projects/greenhouse/sensors.png",
+      "/projects/greenhouse/analytics.png"
+    ],
+
+    links: {
+      github: "https://github.com/username/smart-greenhouse",
+      liveDemo: "https://greenhouse-demo.vercel.app",
+      caseStudy: "/projects/smart-iot-greenhouse",
+      videoDemo: "https://youtube.com/demo-video"
+    },
+
+    metrics: {
+      performanceImprovement: "30% reduction in manual monitoring",
+      usersTested: 10
+    }
+  },
+
+  {
+    id: "ai-content-studio",
+    title: "AI Content Studio",
+    slug: "ai-content-studio",
+    description: "A machine learning powered platform that generates SEO-optimized blog drafts based on user keywords and content goals.",
+    shortDescription: "AI platform for generating SEO-optimized content.",
+
+    status: "in-progress",
+    featured: true,
+    category: "ai",
+    year: 2026,
+
+    team: {
+      type: "solo",
+      teamSize: 1,
+      role: "Full Stack Developer"
+    },
+
+    problem: "Content creators spend significant time writing SEO-optimized blog posts manually.",
+    solution: "Developed a platform that generates optimized content drafts using machine learning models and keyword input.",
+
+    techStack: ["Python", "TensorFlow", "Next.js", "Node.js", "PostgreSQL"],
+    features: [
+      "Keyword-based blog generation",
+      "SEO optimization suggestions",
+      "Content editing interface",
+      "Export blog drafts to Markdown"
+    ],
+
+    images: ["/projects/ai-content/dashboard.png", "/projects/ai-content/editor.png"],
+
+    links: {
+      github: "https://github.com/username/ai-content-studio",
+      liveDemo: "https://ai-content.vercel.app",
+      caseStudy: "/projects/ai-content-studio"
+    }
+  },
+
+  {
+    id: "portfolio-site",
+    title: "Developer Portfolio Website",
+    slug: "developer-portfolio",
+    description: "A personal developer portfolio showcasing projects, technical skills, and achievements.",
+    shortDescription: "Personal portfolio built with React and modern UI tools.",
+
+    status: "in-progress",
+    featured: false,
+    category: "web",
+    year: 2026,
+
+    team: {
+      type: "solo",
+      teamSize: 1,
+      role: "Full Stack Developer"
+    },
+
+    problem: "Developers need a professional online presence to showcase projects and technical ability.",
+    solution: "Created a modern developer portfolio with animated UI components and project showcases.",
+
+    techStack: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+    features: [
+      "Animated project cards",
+      "Featured project section",
+      "Responsive design",
+      "Dynamic project pages"
+    ],
+
+    images: ["/projects/portfolio/home.png", "/projects/portfolio/projects.png"],
+
+    links: {
+      github: "https://github.com/username/portfolio",
+      liveDemo: "https://lugisani.dev"
+    }
+  }
+];
 
 export const projectTypes = [
   {
