@@ -6,7 +6,7 @@ export default function Available(){
 
 
   const [status, _setStatus] = useState({
-    available: false,
+    available: true,
     message: "Currently not available for freelance.",
     loading: true,
   });
@@ -28,7 +28,7 @@ export default function Available(){
       <div className="text-sm inline-flex items-center rounded-4xl border-[#1a73e8] border-2 p-1 px-4 gap-2" >
           <img className="h-6" src={blueWork} alt="work icon" />
           <h1>
-            Available for freelance.
+            Open to WIL / Internship Opportunities
           </h1>
         </div>
     </>

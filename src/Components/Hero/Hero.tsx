@@ -20,7 +20,9 @@ export default function Hero(){
         </h3>
         <br />
         <p>
-          I solve problems with code, learning new tech and leveling up everyday. Let's connect and make something awesome.
+          I solve problems with code, learning new tech and continiously improve my skills.
+          <br />
+          Currently seeking a Work Intergrated Learning (WIL) or Software Development Internship.
         </p>
     </div>
     <div className="">

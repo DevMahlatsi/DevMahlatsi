@@ -5,7 +5,7 @@ export default function HeroYearOfExperience(){
         <div>
           <h3 className="stats-header">
             <span>
-              6
+              4
             </span>
             <span>
               +
