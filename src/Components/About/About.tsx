@@ -1,7 +1,7 @@
 import AboutStats from "../Indicators/About-Stats/AboutStats";
 import HireReasons from "../Indicators/Hire Reasons/HireReasons";
 import GetToKnowMe from "../Indicators/Page Headings/Get To know me/GetToKnowMe";
-import ToolsAndTechnologies from "../Indicators/Tools and Technologies/ToolsAndTechnologies";
+import ToolsAndTechnologies from "../Tools and Technologies/ToolsAndTechnologies";
 
 export default function About(){
   return(

@@ -4,7 +4,7 @@ export default function Logo(){
   return(
     <div>
       <img 
-        className="min-h-25 max-h-25"
+        className="min-h-25 max-h-25 "
         src={logo} 
         alt="DevMahlatsi logo" />
     </div>
