@@ -19,7 +19,7 @@ export default function Home(){
       <br /><br />
       <Available/>
 
-      {/* <Hero/> */}
+      <Hero/>
       {/* //////The about page*/}
       <About/>
       
