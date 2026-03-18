@@ -70,7 +70,7 @@ export const projects = [
 
   {
     id: "ai-content-studio",
-    title: "Agro-Smart",
+    title: "Agri-Smart",
     slug: "ai-content-studio",
     description: "A machine learning powered platform that generates SEO-optimized blog drafts based on user keywords and content goals.",
     shortDescription: "AI platform for generating SEO-optimized content.",
@@ -200,7 +200,7 @@ export const skills = [
   {
     id: 1, 
     icon: webDevelopment,
-    title: "Web Development",
+    title: "Web Develoepment",
     description: ["Responsive applications", "Frontend-backend integration", "Performance optimization"]
   },
   {
