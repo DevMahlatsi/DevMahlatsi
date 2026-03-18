@@ -3,7 +3,7 @@ import ViewWork from "../Buttons/View My Work/ViewMyWork";
 import HeroStats from "../Indicators/Hero stats/HeroStats";
 
 export default function Hero(){
-  // const name = "Lugisani Jeremiah Mahlatsi";
+  const name = "Lugisani Jeremiah Mahlatsi";
   return(
 
     <>
