@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <img 
           src={project.images?.[0] || "/api/placeholder/400/225"} 
           alt={project.title}
-          className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+          className="w-full h-full object-cover popacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
         />
         
         {/* TOP LEFT: Project Status Badge */}

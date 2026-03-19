@@ -6,6 +6,10 @@ import uiImplementation from "../assets/userInterface.svg";
 import backendApi from "../assets/backendApi.svg";
 import uxAwareDesign from "../assets/uiUxDesign.svg";
 
+import kokoroStream from "/kokoro-stream-home.png"
+import agriSmart from "agri-smart.png"
+import merchBay from "merch-bay.png"
+
 // import userCentered from "../assets/userCentered.svg";
 import fastDelivery from "../assets/fastDelivery.svg";
 import qualityDriven from "../assets/qualityDriven.svg";
@@ -15,58 +19,66 @@ import alwaysLearning from "../assets/alwaysLearning.svg";
 
 export const projects = [
   {
-    id: "kokoro-stream",
-    title: "Kokoro Stream",
-    slug: "kokoro-stream",
-    description: "An automated greenhouse monitoring system that collects environmental sensor data and provides real-time analytics for optimal crop management.",
-    shortDescription: "Automated greenhouse monitoring system with real-time analytics.",
-    
-    status: "completed",
-    featured: true,
-    category: "iot",
-    year: 2026,
-    duration: "3 months",
+  "id": "kokoro-stream",
+  "title": "Kokoro Stream",
+  "slug": "kokoro-stream",
+  "description": "A modern streaming web application that allows users to browse, search, and explore movies and TV shows through a clean, responsive interface. The application focuses on performance, usability, and scalable component-based design.",
+  "shortDescription": "Streaming web app for browsing movies and TV shows.",
 
-    team: {
-      type: "group",
-      teamSize: 3,
-      role: "Frontend Developer & API Integration",
-      responsibilities: [
-        "Developed the React dashboard for monitoring greenhouse data",
-        "Integrated backend API for sensor data visualization",
-        "Designed responsive UI using Tailwind CSS"
-      ]
-    },
+  "status": "completed",
+  "featured": true,
+  "category": "web",
+  "year": 2026,
+  "duration": "3 months",
 
-    problem: "Farmers often struggle to monitor greenhouse conditions remotely, leading to inefficient irrigation and poor crop health.",
-    solution: "Built an IoT-based monitoring system that collects sensor data such as temperature, humidity, and soil moisture and displays it in a web dashboard with automated alerts.",
-
-    techStack: ["React", "Tailwind CSS", "Node.js", "Django", "SQL", "IoT Sensors"],
-    features: [
-      "Real-time greenhouse environmental monitoring",
-      "Automated alerts for abnormal conditions",
-      "Historical data analytics dashboard",
-      "Remote monitoring via web interface"
-    ],
-
-    images: [
-      "/projects/greenhouse/dashboard.png",
-      "/projects/greenhouse/sensors.png",
-      "/projects/greenhouse/analytics.png"
-    ],
-
-    links: {
-      github: "https://github.com/username/smart-greenhouse",
-      liveDemo: "https://greenhouse-demo.vercel.app",
-      caseStudy: "/projects/smart-iot-greenhouse",
-      videoDemo: "https://youtube.com/demo-video"
-    },
-
-    metrics: {
-      performanceImprovement: "30% reduction in manual monitoring",
-      usersTested: 10
-    }
+  "team": {
+    "type": "solo",
+    "teamSize": 1,
+    "role": "Full Stack Developer",
+    "responsibilities": [
+      "Designed and built the entire application independently",
+      "Developed reusable React components for movie and TV listings",
+      "Implemented dynamic data fetching from external APIs",
+      "Built search functionality for movies and TV shows",
+      "Designed a responsive and modern UI using Tailwind CSS",
+      "Structured the project for scalability and maintainability"
+    ]
   },
+
+  "problem": "Users often struggle to find a clean and fast interface to browse movies and TV shows without clutter or unnecessary complexity.",
+  
+  "solution": "Developed a streamlined streaming-style platform that focuses on intuitive navigation, fast search, and clear content presentation using modern frontend technologies.",
+
+  "techStack": [
+    "React",
+    "Next.js",
+    "JavaScript",
+    "Tailwind CSS",
+    "REST APIs"
+  ],
+
+  "features": [
+    "Browse movies and TV shows",
+    "Search functionality with real-time results",
+    "Responsive design for mobile and desktop",
+    "Dynamic content rendering using API data",
+    "Clean and modern UI focused on usability"
+  ],
+
+  "images": [
+    kokoroStream
+  ],
+
+  "links": {
+    "github": "https://github.com/your-username/kokoro-stream",
+    "liveDemo": "https://kokoro-stream.vercel.app",
+    "caseStudy": "/projects/kokoro-stream"
+  },
+
+  "metrics": {
+    "performance": "Optimized for fast load times and smooth UI interactions"
+  }
+},
 
   {
     id: "ai-content-studio",
