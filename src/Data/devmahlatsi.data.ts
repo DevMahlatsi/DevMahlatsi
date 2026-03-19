@@ -6,9 +6,11 @@ import uiImplementation from "../assets/userInterface.svg";
 import backendApi from "../assets/backendApi.svg";
 import uxAwareDesign from "../assets/uiUxDesign.svg";
 
-import kokoroStream from "/kokoro-stream-home.png"
-import _agriSmart from "/agri-smart.png"
-import merchBay from "/merch-bay.png"
+import kokoroStream from "/kokoro-stream-home.png";
+import _agriSmart from "/agri-smart.png";
+import merchBay from "/merch-bay.png";
+// import campusClassSystem from "/campus-class-system.jpeg";
+
 
 // import userCentered from "../assets/userCentered.svg";
 import fastDelivery from "../assets/fastDelivery.svg";
@@ -28,7 +30,7 @@ export const projects = [
   "status": "completed",
   "featured": true,
   "category": "web",
-  "year": 2026,
+  "year": 2025,
   "duration": "3 months",
 
   "team": {
@@ -51,7 +53,7 @@ export const projects = [
 
   "techStack": [
     "React",
-    "Next.js",
+    "Rest APIs",
     "JavaScript",
     "Tailwind CSS",
     "REST APIs"
@@ -70,7 +72,7 @@ export const projects = [
   ],
 
   "links": {
-    "github": "https://github.com/your-username/kokoro-stream",
+    "github": "https://github.com/devmahlatsi/kokoro-stream",
     "liveDemo": "https://kokoro-stream.vercel.app",
     "caseStudy": "/projects/kokoro-stream"
   },
@@ -109,7 +111,13 @@ export const projects = [
 
   "solution": "Developed a centralized digital storefront that allows customers to explore available posters, view details, and make faster purchasing decisions through an intuitive interface.",
 
-  "techStack": [],
+  "techStack": [
+    
+    "Next.js",
+    "JavaScript",
+    "Tailwind CSS",
+    "REST APIs"
+  ],
 
   "features": [
     "Product catalog with anime and music posters",
@@ -124,8 +132,8 @@ export const projects = [
   ],
 
   "links": {
-    "github": "https://github.com/your-username/kokoro-stream",
-    "liveDemo": "https://kokoro-stream.vercel.app",
+    "github": "https://github.com/DevMahlatsi/merchbay",
+    "liveDemo": "https://merchbay.vercel.app",
     "caseStudy": "/projects/kokoro-stream"
   },
 
@@ -133,42 +141,42 @@ export const projects = [
     "impact": "Used to support real poster sales on campus"
   }
   },
-  {
-    id: "portfolio-site",
-    title: "Campus Lab & Class management system",
-    slug: "developer-portfolio",
-    description: "A personal developer portfolio showcasing projects, technical skills, and achievements.",
-    shortDescription: "Personal portfolio built with React and modern UI tools.",
+  // {
+  //   id: "portfolio-site",
+  //   title: "Campus Lab & Class management system",
+  //   slug: "developer-portfolio",
+  //   description: "A personal developer portfolio showcasing projects, technical skills, and achievements.",
+  //   shortDescription: "Personal portfolio built with React and modern UI tools.",
 
-    status: "in-progress",
-    featured: false,
-    category: "web",
-    year: 2026,
+  //   status: "planned",
+  //   featured: false,
+  //   category: "web",
+  //   year: 2026,
 
-    team: {
-      type: "solo",
-      teamSize: 1,
-      role: "Full Stack Developer"
-    },
+  //   team: {
+  //     type: "solo",
+  //     teamSize: 1,
+  //     role: "Full Stack Developer"
+  //   },
 
-    problem: "Developers need a professional online presence to showcase projects and technical ability.",
-    solution: "Created a modern developer portfolio with animated UI components and project showcases.",
+  //   problem: "Developers need a professional online presence to showcase projects and technical ability.",
+  //   solution: "Created a modern developer portfolio with animated UI components and project showcases.",
 
-    techStack: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
-    features: [
-      "Animated project cards",
-      "Featured project section",
-      "Responsive design",
-      "Dynamic project pages"
-    ],
+  //   techStack: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+  //   features: [
+  //     "Animated project cards",
+  //     "Featured project section",
+  //     "Responsive design",
+  //     "Dynamic project pages"
+  //   ],
 
-    images: ["/projects/portfolio/home.png", "/projects/portfolio/projects.png"],
+  //   images: [campusClassSystem],
 
-    links: {
-      github: "https://github.com/username/portfolio",
-      liveDemo: "https://lugisani.dev"
-    }
-  }
+  //   links: {
+  //     github: "https://github.com/username/portfolio",
+  //     liveDemo: "https://lugisani.dev"
+  //   }
+  // }
 ];
 
 export const projectTypes = [
