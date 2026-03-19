@@ -8,7 +8,7 @@ const projects = rawProjects as Project[];
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-[black] dark:bg-[red]">
+    <div className="min-h-screen bg-[black] ">
       <br /><br />
       <RecentWork />
       <br /><br />
