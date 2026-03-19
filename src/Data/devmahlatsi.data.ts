@@ -7,7 +7,7 @@ import backendApi from "../assets/backendApi.svg";
 import uxAwareDesign from "../assets/uiUxDesign.svg";
 
 import kokoroStream from "/kokoro-stream-home.png"
-import agriSmart from "/agri-smart.png"
+import _agriSmart from "/agri-smart.png"
 import merchBay from "/merch-bay.png"
 
 // import userCentered from "../assets/userCentered.svg";
