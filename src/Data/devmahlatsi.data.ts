@@ -7,8 +7,8 @@ import backendApi from "../assets/backendApi.svg";
 import uxAwareDesign from "../assets/uiUxDesign.svg";
 
 import kokoroStream from "/kokoro-stream-home.png"
-import agriSmart from "agri-smart.png"
-import merchBay from "merch-bay.png"
+import agriSmart from "/agri-smart.png"
+import merchBay from "/merch-bay.png"
 
 // import userCentered from "../assets/userCentered.svg";
 import fastDelivery from "../assets/fastDelivery.svg";
@@ -81,43 +81,58 @@ export const projects = [
 },
 
   {
-    id: "ai-content-studio",
-    title: "Agri-Smart",
-    slug: "ai-content-studio",
-    description: "A machine learning powered platform that generates SEO-optimized blog drafts based on user keywords and content goals.",
-    shortDescription: "AI platform for generating SEO-optimized content.",
+  "id": "merch-bay",
+  "title": "Merch Bay",
+  "slug": "merch-bay",
+  "description": "A real-world e-commerce platform used to sell anime and music-themed posters on campus. The application allows users to browse products, search for specific items, and view pricing and size options through a clean, responsive interface designed for fast product discovery.",
+  "shortDescription": "Campus-based poster store with a custom e-commerce web app.",
 
-    status: "in-progress",
-    featured: true,
-    category: "ai",
-    year: 2026,
+  "status": "in-progress",
+  "featured": true,
+  "category": "web",
+  "year": 2026,
 
-    team: {
-      type: "solo",
-      teamSize: 1,
-      role: "Full Stack Developer"
-    },
-
-    problem: "Content creators spend significant time writing SEO-optimized blog posts manually.",
-    solution: "Developed a platform that generates optimized content drafts using machine learning models and keyword input.",
-
-    techStack: ["Python", "TensorFlow", "Next.js", "Node.js", "PostgreSQL"],
-    features: [
-      "Keyword-based blog generation",
-      "SEO optimization suggestions",
-      "Content editing interface",
-      "Export blog drafts to Markdown"
-    ],
-
-    images: ["/projects/ai-content/dashboard.png", "/projects/ai-content/editor.png"],
-
-    links: {
-      github: "https://github.com/username/ai-content-studio",
-      liveDemo: "https://ai-content.vercel.app",
-      caseStudy: "/projects/ai-content-studio"
-    }
+  "team": {
+    "type": "solo",
+    "teamSize": 1,
+    "role": "Full Stack Developer & Operator",
+    "responsibilities": [
+      "Designed and developed the full e-commerce interface",
+      "Managed product listings and pricing for real-world sales",
+      "Built reusable UI components for scalability",
+      "Handled product data structuring and updates",
+      "Designed the user experience for quick browsing and purchasing"
+    ]
   },
 
+  "problem": "Selling posters manually on campus limits visibility and makes it difficult for customers to browse available options efficiently.",
+
+  "solution": "Developed a centralized digital storefront that allows customers to explore available posters, view details, and make faster purchasing decisions through an intuitive interface.",
+
+  "techStack": [],
+
+  "features": [
+    "Product catalog with anime and music posters",
+    "Search functionality for quick product discovery",
+    "Dynamic product cards with pricing and size selection (A3/A4)",
+    "Responsive layout for mobile and desktop users",
+    "Structured UI ready for cart and checkout integration"
+  ],
+  
+  "images": [
+    merchBay
+  ],
+
+  "links": {
+    "github": "https://github.com/your-username/kokoro-stream",
+    "liveDemo": "https://kokoro-stream.vercel.app",
+    "caseStudy": "/projects/kokoro-stream"
+  },
+
+  "metrics": {
+    "impact": "Used to support real poster sales on campus"
+  }
+  },
   {
     id: "portfolio-site",
     title: "Campus Lab & Class management system",
