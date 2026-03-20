@@ -311,11 +311,6 @@ export const techToolsData = [
     title: "REST APIs",
   },
   {
-    id: 100,
-    title: "EJBs",
-  },
-  
-  {
     id: 2,
     title: "Next.js",
   },
@@ -359,10 +354,6 @@ export const techToolsData = [
     id: 12,
     title: "Kotlin"
   },
-  {
-    id: 13,
-    title: ""
-  }
 ];
 
 
