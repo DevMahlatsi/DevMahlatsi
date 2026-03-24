@@ -28,7 +28,7 @@ export default function Available(){
       <div className="text-sm inline-flex items-center rounded-4xl border-[#1a73e8] border-2 p-1 px-4 gap-2" >
           <img className="h-6" src={blueWork} alt="work icon" />
           <h1>
-            Open to WIL / Internship Opportunities
+            Available for Software Development Opportunities
           </h1>
         </div>
     </>
