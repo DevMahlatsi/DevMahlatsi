@@ -4,11 +4,11 @@ export default function Menu(){
   return(
     <>
       <div className="hidden sm:block">
-        <ul className="text-sm md:text-xl flex md:gap-8 gap-5">
+        <ul className="text-sm md:text-xl flex md:gap-16 gap-5">
           {menuData.map((menu, index) => {
             return(
               <>
-                <li key={index} className="" >{menu.title}</li>
+                <li key={index} className="hover:cursor-pointer hover:" >{menu.title.toUpperCase()}</li>
               </>
             )
           })}
