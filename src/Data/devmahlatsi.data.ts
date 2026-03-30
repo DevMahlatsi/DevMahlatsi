@@ -9,6 +9,7 @@ import uxAwareDesign from "../assets/uiUxDesign.svg";
 import kokoroStream from "/kokoro-stream-home.png";
 import _agriSmart from "/agri-smart.png";
 import merchBay from "/merch-bay.png";
+import openChatsPodcast from "/open-chats-podcast.png";
 // import campusClassSystem from "/campus-class-system.jpeg";
 
 
@@ -20,6 +21,59 @@ import alwaysLearning from "../assets/alwaysLearning.svg";
 
 
 export const projects = [
+  {
+  "id": "open-chats-podcast",
+  "title": "Open Chats Podcast",
+  "slug": "open-chats-podcast",
+  "description": "A multi-page React website built for Open Chats Podcast — a South African youth video podcast with 606K subscribers and 70M+ views. The site serves as both a brand presence and an investor pitch platform, featuring live YouTube API integration to display real-time episode data, channel statistics, and a partnership/sponsorship section for potential brand collaborators.",
+  "shortDescription": "Investor-facing podcast website with live YouTube API integration.",
+  "status": "planned",
+  "featured": true,
+  "category": "web",
+  "year": 2026,
+  "duration": "2 weeks",
+  "team": {
+    "type": "solo",
+    "teamSize": 1,
+    "role": "Full Stack Developer",
+    "responsibilities": [
+      "Designed and built the entire multi-page React application",
+      "Integrated YouTube Data API v3 for live episode and channel stats",
+      "Built reusable component architecture across 5 pages",
+      "Designed investor and partnership pitch section",
+      "Implemented fully responsive mobile-friendly UI",
+      "Structured environment variable config for API key management"
+    ]
+  },
+  "problem": "Open Chats Podcast had no dedicated web presence to showcase their brand, content, and reach to potential investors and brand partners.",
+  "solution": "Built a professional multi-page website that acts as both a content hub and an investor pitch platform, pulling live data directly from YouTube to demonstrate real audience scale and engagement.",
+  "techStack": [
+    "React",
+    "React Router",
+    "YouTube Data API v3",
+    "JavaScript",
+    "CSS Modules"
+  ],
+  "features": [
+    "Live YouTube API integration for real-time episode and stats display",
+    "Multi-page routing with React Router (Home, Episodes, About, Invest, Contact)",
+    "Partnership and sponsorship pitch section for brand investors",
+    "Episode search and filtering functionality",
+    "Responsive mobile-first design",
+    "Contact form with subject categorisation"
+  ],
+  "images": [
+    openChatsPodcast
+  ],
+  "links": {
+    "github": "https://github.com/DevMahlatsi",
+    "liveDemo": null,
+    "caseStudy": "/projects/open-chats-podcast"
+  },
+  "metrics": {
+    "reach": "Built for a channel with 606K subscribers and 70M+ total views"
+  }
+},
   {
   "id": "kokoro-stream",
   "title": "Kokoro Stream",
@@ -141,6 +195,7 @@ export const projects = [
     "impact": "Used to support real poster sales on campus"
   }
   },
+  
   // {
   //   id: "portfolio-site",
   //   title: "Campus Lab & Class management system",
