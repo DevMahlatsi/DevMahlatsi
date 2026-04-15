@@ -10,6 +10,7 @@ import kokoroStream from "/kokoro-stream-home.png";
 import _agriSmart from "/agri-smart.png";
 import merchBay from "/merch-bay.png";
 import openChatsPodcast from "/open-chats-podcast.png";
+import lTidoNetwork from "/l-tido-network.png";
 // import campusClassSystem from "/campus-class-system.jpeg";
 
 
@@ -21,13 +22,78 @@ import alwaysLearning from "../assets/alwaysLearning.svg";
 
 
 export const projects = [
+    {
+    "id": "l-tido-network",
+    "title": "L-Tido Network",
+    "slug": "l-tido-network",
+    "description": "A full-stack podcast network platform for L-Tido Network — South Africa's home for unfiltered podcast content featuring two distinct shows (New Gen Podcast and L-Tido Podcast). The site integrates YouTube Data API v3 for live episode listings, channel statistics, and includes sponsorship pages, merch storefront, and multi-page routing with dynamic show detail views.",
+    "shortDescription": "Podcast network platform with live YouTube API, two shows, sponsor tiers, and merch preview.",
+    "status": "completed",
+    "featured": true,
+    "category": "web",
+    "year": 2025,
+    "duration": "3 months",
+    "team": {
+      "type": "solo",
+      "teamSize": 1,
+      "role": "Full Stack Developer",
+      "responsibilities": [
+        "Designed and built full React application with 8+ routes",
+        "Integrated YouTube Data API v3 for channel stats and playlist videos",
+        "Built custom hooks for reusable YouTube data fetching",
+        "Created dynamic show detail pages with route parameters (/shows/:slug)",
+        "Designed 3-tier sponsorship packages page with CTAs",
+        "Implemented responsive masonry-style episode grids",
+        "Built presenter card system with social media links",
+        "Created merch preview section (coming soon state)",
+        "Styled entire application with CSS Modules + global design system",
+        "Added contact form with mailto integration and subject categorisation"
+      ]
+    },
+    "problem": "L-Tido Network had two successful podcasts but no unified digital home to showcase both shows, attract sponsors, or give fans a central place to discover episodes and learn about hosts.",
+    "solution": "Built a complete multi-page React platform that aggregates both shows under one brand, pulls live YouTube data for authenticity, provides sponsorship information with clear tiered packages, and creates a professional web presence for investor and partner outreach.",
+    "techStack": [
+      "React",
+      "React Router DOM",
+      "YouTube Data API v3",
+      "JavaScript",
+      "CSS"
+    ],
+    "features": [
+      "Live YouTube channel stats (subscribers, views, video count)",
+      "Dynamic episode listings from two separate YouTube playlists",
+      "Episode search and filtering by show",
+      "Show detail pages with host bios and social links",
+      "Sponsorship page with 3 tiered packages (Shoutout, Feature, Full Partner)",
+      "Merch preview section with 'coming soon' status",
+      "Contact form with subject categorisation",
+      "Responsive mobile-first design",
+      "Animated ticker banner",
+      "Reusable VideoCard component with duration badges",
+      "PresenterCard component with social buttons",
+      "Format utilities for counts, dates, and durations"
+    ],
+    "images": [
+      lTidoNetwork
+    ],
+    "links": {
+      "github": "https://github.com/DevMahlatsi/l-tido-network",
+      "liveDemo": "https://ltido-network.vercel.app",
+      "caseStudy": "/projects/l-tido-network"
+    },
+    "metrics": {
+      "subscribers": "225K+ (live from YouTube API)",
+      "activeShows": 2,
+      "totalEpisodes": "79+ (live from playlists)"
+    }
+  },
   {
   "id": "open-chats-podcast",
   "title": "Open Chats Podcast",
   "slug": "open-chats-podcast",
   "description": "A multi-page React website built for Open Chats Podcast — a South African youth video podcast. The site serves as a digital home base for the show, featuring live YouTube Data API v3 integration to display real-time episode listings, channel statistics, and a contact section for partnership and collaboration enquiries.",
   "shortDescription": "Podcast website with live YouTube API integration and multi-page routing.",
-  "status": "planned",
+  "status": "in-progress",
   "featured": true,
   "category": "web",
   "year": 2026,
