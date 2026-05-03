@@ -4,7 +4,7 @@ import LetsTalk from "./Lets Talk/LetsTalk";
 import Logo from "./Logo/Logo";
 import Menu from "./Menu/Menu";
 import VMenu from "./Menu/VerticalMenu";
-
+import { scrollToSection } from "../../utils/scrollToSection";
 
 export default function NavigationBar(){
   const [isOpen, setIsOpen] = useState(false);
@@ -13,27 +13,24 @@ export default function NavigationBar(){
     setIsOpen(prev => !prev);
   }
 
+  const handleNavClick = (sectionId: string) => {
+    scrollToSection(sectionId);
+    setIsOpen(false);
+  }
+
   return(
     <>
-    <header>
-      <div className="  flex justify-between px-7 items-center  bg-[rgba(63,63,63,0.62)]
-      shadow-2xl ">
-      <Logo/>
-      <Menu/>
-      <LetsTalk/>
-      <Burger
-        onToggle={handleToggle} currentValue={isOpen} />
-      </div>
-      <div className="w-60">
-        <VMenu
-        isOpen = {isOpen}
-        />
-      </div>
-      
-      
-
-    </header>
-      
+      <header>
+        <div className="flex justify-between px-7 items-center bg-[rgba(63,63,63,0.62)] shadow-2xl">
+          <Logo/>
+          <Menu onNavClick={handleNavClick}/>
+          <LetsTalk/>
+          <Burger onToggle={handleToggle} currentValue={isOpen} />
+        </div>
+        <div className="w-60">
+          <VMenu isOpen={isOpen} onNavClick={handleNavClick}/>
+        </div>
+      </header>
     </>
   )
 }

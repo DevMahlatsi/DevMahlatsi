@@ -19,29 +19,32 @@ export default function Home(){
       <br /><br />
       <Available/>
 
-      <Hero/>
-      {/* //////The about page*/}
-      <About/>
-      
-        {/* ////// The skills page */}
+      <section id="home">
+        <Hero/>
+      </section>
+
+      <section id="about">
+        <About/>
+      </section>
+
+      <section id="skills">
         <Services/>
-      
-      {/* Portfolio page */}
+      </section>
 
-      <Portfolio/>
-      
-      {/* Design process page */}
+      <section id="portfolio">
+        <Portfolio/>
+      </section>
 
-      <Design/>
+      <section id="process">
+        <Design/>
+      </section>
 
-        {/* contact page */}
+      <section id="contact">
+        <Contact/>
+      </section>
 
-      
-      <Contact/>
       <br /><br />
       <Footer/>
-      
     </>
-
   )
 }
