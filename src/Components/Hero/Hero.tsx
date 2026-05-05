@@ -7,7 +7,15 @@ export default function Hero(){
   const name = "Lugisani Jeremiah Mahlatsi";
   
   // Typing animation state
-  const roles = ["Full Stack Software Developer", "Problem Solver", "Tech Learner", "Code Creator"];
+  const roles = [
+  "Full Stack Developer",
+  "Next.js Builder",
+  "API Integrator",
+  "Systems Thinker",
+  "Automation Enthusiast",
+  "Real-World Problem Solver",
+  "Startup-Minded Developer"
+];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);

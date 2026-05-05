@@ -3,9 +3,15 @@ export const scrollToSection = (elementId: string) => {
   const element = document.getElementById(elementId);
   
   if (element) {
-    const offset = 80; // Height of your sticky navbar (adjust as needed)
+    // Fixed offset values based on actual measurements
+    const banner = document.querySelector('.banner-top');
+    const bannerHeight = banner && window.getComputedStyle(banner).display !== 'none' ? 48 : 0;
+    const navbarHeight = 72; // Increased from 64
+    
+    const totalOffset = bannerHeight + navbarHeight + 30;
+    
     const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.scrollY - offset;
+    const offsetPosition = elementPosition + window.scrollY - totalOffset;
 
     window.scrollTo({
       top: offsetPosition,
