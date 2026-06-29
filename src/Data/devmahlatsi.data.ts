@@ -140,6 +140,149 @@ export const projects = [
     "reach": "Built for a channel with 606K subscribers and 70M+ total views"
   }
 },
+{
+    "id": "agrismart",
+    "title": "AgriSmart",
+    "slug": "agrismart",
+    "description": "A comprehensive farm-to-consumer platform connecting South African farmers directly with consumers. Features include AI-powered plant disease detection, interactive farm discovery maps, product marketplace with order management, real-time weather analytics, and multi-role user system (farmers, consumers, superusers). Built with Django REST API, React Native mobile app, and Supabase PostgreSQL database.",
+    "shortDescription": "Farm-to-consumer marketplace with AI disease detection, farm maps, and direct ordering system connecting farmers with consumers.",
+    "status": "ongoing",
+    "featured": true,
+    "category": "mobile",
+    "year": 2025,
+    "duration": "5 months",
+    "team": {
+      "type": "group",
+      "teamSize": 9,
+      "role": "Full Stack Developer & Team Lead",
+      "responsibilities": [
+        "Led full-stack architecture design and implementation",
+        "Built Django REST API with 20+ endpoints for farms, crops, marketplace, orders",
+        "Integrated OpenAI for plant disease detection with 85%+ accuracy",
+        "Developed interactive farm discovery map with Expo + react-native-maps",
+        "Implemented real-time weather data fetching from OpenWeatherMap",
+        "Created marketplace product listing and order management system",
+        "Built multi-role authentication system (farmer/consumer/superuser)",
+        "Managed Supabase PostgreSQL database with migrations and seed data",
+        "Deployed backend to Render and coordinated team frontend integration",
+        "Wrote 60%+ of core backend logic and API documentation"
+      ]
+    },
+    "problem": "South African small-scale farmers struggle to reach direct consumers, lack access to plant disease diagnosis tools, and have limited visibility for their produce. Consumers have no easy way to find local farms, verify product authenticity, or order directly from producers. Existing solutions are fragmented, expensive, or don't serve the local market context.",
+    "solution": "Built a unified platform where farmers manage crops, list products for sale, and get AI-powered disease detection. Consumers discover farms on an interactive map, browse available products, place orders, and track purchases. The app bridges the gap between rural producers and urban consumers, reducing food miles and supporting local agriculture.",
+    "techStack": [
+      "React Native (Expo)",
+      "Django REST Framework",
+      "PostgreSQL (Supabase)",
+      "Google Gemini AI",
+      "OpenWeatherMap API",
+      "AWS S3 (image storage)",
+      "JWT Authentication",
+      "Javascript"
+    ],
+    "features": [
+      "AI plant disease detection (85%+ accuracy via Gemini API)",
+      "Interactive farm discovery map with geolocation",
+      "Real-time weather data and farm analytics",
+      "Product marketplace with price/quantity listing",
+      "Order management with status tracking (pending/accepted/ready/completed)",
+      "Multi-role authentication (farmer, consumer, superuser)",
+      "Search and filter farms by name, practice, product type",
+      "Shopping cart and checkout flow",
+      "Push notifications for order updates",
+      "Crop management with planting/harvest tracking",
+      "Farmer products dashboard with inventory management",
+      "Consumer orders history and order tracking"
+    ],
+    "images": [
+      "agrismart-map-screen",
+      "agrismart-marketplace",
+      "agrismart-disease-detection",
+      "agrismart-farm-detail",
+      "agrismart-orders",
+      "agrismart-analytics"
+    ],
+    "links": {
+      "github": "https://github.com/DevMahlatsi/agrismart",
+      "githubBackend": "https://github.com/DevMahlatsi/agrismart-backend",
+      "githubFrontend": "https://github.com/DevMahlatsi/agrismart-mobile",
+      "liveDemo": "https://agri-smart-api.onrender.com/api/",
+      "caseStudy": "/projects/agrismart"
+    },
+    "teamMembers": [
+      {
+        "name": "Dev Mahlatsi",
+        "role": "Full Stack Developer & Team Lead",
+        "github": "https://github.com/DevMahlatsi",
+        "contributions": [
+          "Backend architecture (80%)",
+          "API development (60%)",
+          "Database design",
+          "Deployment & DevOps",
+          "AI integration"
+        ]
+      },
+      {
+        "name": "Boikhutso ",
+        "role": "Database",
+        "github": "https://github.com/thabonkosi",
+        "contributions": [
+          "UI/UX design",
+          "Navigation implementation",
+          "Profile screens",
+          "Chat feature"
+        ]
+      },
+      {
+        "name": "Mosa Msiza",
+        "role": "Mobile Developer",
+        "github": "https://github.com/leratomolefe",
+        "contributions": [
+          "Map integration",
+          "Camera & image upload",
+          "Crop management screens"
+        ]
+      },
+      {
+        "name": "Mbali Zulu",
+        "role": "QA & Documentation",
+        "github": "https://github.com/siphodlamini",
+        "contributions": [
+          "Testing & bug fixes",
+          "Documentation",
+          "User guides"
+        ]
+      },
+      {
+        "name": "Mbali Zulu",
+        "role": "QA & Documentation",
+        "github": "https://github.com/siphodlamini",
+        "contributions": [
+          "Testing & bug fixes",
+          "Documentation",
+          "User guides"
+        ]
+      },
+      {
+        "name": "Mbali Zulu",
+        "role": "QA & Documentation",
+        "github": "https://github.com/siphodlamini",
+        "contributions": [
+          "Testing & bug fixes",
+          "Documentation",
+          "User guides"
+        ]
+      }
+    ],
+    "metrics": {
+      "apiEndpoints": "25+",
+      "databaseTables": "15+",
+      "supportedCrops": "20+",
+      "activeUsers": "50+ (beta)",
+      "avgDiseaseAccuracy": "85%",
+      "responseTime": "<300ms"
+    }
+  },
   {
   "id": "kokoro-stream",
   "title": "Kokoro Stream",

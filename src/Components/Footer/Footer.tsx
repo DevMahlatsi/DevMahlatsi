@@ -79,7 +79,7 @@ export default function Footer() {
                 GitHub
               </a>
               <a 
-                href="https://linkedin.com/in/lugisani-mahlatsi"
+                href="https://www.linkedin.com/in/lugisani-j-mahlatsi-b85739261/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-[#1a73e8] transition-colors text-sm"
