@@ -13,6 +13,9 @@ import openChatsPodcast from "/open-chats-podcast.png";
 import lTidoNetwork from "/l-tido-network.png";
 // import campusClassSystem from "/campus-class-system.jpeg";
 
+const lockedInHome = "https://res.cloudinary.com/a9tmwutr/image/upload/v1782987551/Screenshot_2026-06-29_145551_xfccgz.png"
+const lockedInJobs = "https://res.cloudinary.com/a9tmwutr/image/upload/v1782988680/Screenshot_2026-07-02_123641_xutd3i.png"
+const lockedInOrganisation = "https://res.cloudinary.com/a9tmwutr/image/upload/v1782988681/Screenshot_2026-07-02_123656_ooxzmo.png"
 
 // import userCentered from "../assets/userCentered.svg";
 import fastDelivery from "../assets/fastDelivery.svg";
@@ -22,6 +25,81 @@ import alwaysLearning from "../assets/alwaysLearning.svg";
 
 
 export const projects = [
+    {
+  "id": "lockedin",
+  "title": "LockedIn",
+  "slug": "lockedin",
+  "description": "A full-stack AI-powered recruitment platform that automates CV screening and candidate-job matching. LockedIn lets organisations post vacancies, candidates apply with a single CV upload, and an AI pipeline automatically scores and ranks applicants against job requirements — giving recruiters a structured shortlist instead of a pile of unsorted applications. The platform supports three distinct roles (applicant, recruiter, admin) each with a dedicated console.",
+  "shortDescription": "AI-powered recruitment platform with automated CV scoring, role-based consoles, and a Django + Celery processing pipeline.",
+  "status": "planned",
+  "featured": true,
+  "category": "web",
+  "year": 2026,
+  "duration": "Ongoing",
+  "team": {
+    "type": "solo",
+    "teamSize": 1,
+    "role": "Full Stack Developer",
+    "responsibilities": [
+      "Designed and built the entire Next.js frontend across four role-based consoles (public, applicant, recruiter, admin)",
+      "Architected the App Router route-group structure with role-based middleware guards",
+      "Built a reusable design system from scratch — typography, color tokens, and component library",
+      "Designed and built the AI result panel showing match score, extracted skills, and reasoning",
+      "Built the recruiter review workflow (qualified / rejected / flagged for review) with rejection reason capture",
+      "Built the admin console — job posting CRUD with a dynamic requirements builder, organisation profile management, and team member role management",
+      "Designed the Next.js API route handler layer that proxies and authenticates every request to the backend",
+      "Architecting the Django REST API backend with Bearer token authentication",
+      "Designing the Celery + Redis async pipeline for CV processing",
+      "Integrating OpenAI for CV-to-job-requirement scoring and skill extraction",
+      "Planning containerised deployment (Docker, Railway, Cloudflare R2)"
+    ]
+  },
+  "problem": "Recruiters and small organisations are overwhelmed by manually reading every CV that comes in for a vacancy, while candidates get little to no visibility into where their application stands or why a decision was made. Existing ATS platforms are expensive, overbuilt for small teams, and rarely show candidates a transparent reason for a rejection.",
+  "solution": "Built a lean recruitment platform where candidates upload a CV once and apply to any open role in seconds, while an AI pipeline automatically extracts skills and experience from the CV and scores it against the job's requirements. Recruiters get a ranked, AI-annotated shortlist instead of raw applications, and can qualify, reject, or flag candidates with a reason that's visible back to the applicant. Admins manage job postings, organisation profile, and team access from a dedicated console.",
+  "techStack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Django",
+    "Django REST Framework",
+    "Celery",
+    "Redis",
+    "PostgreSQL",
+    "OpenAI API",
+    "PyMuPDF",
+    "Docker"
+  ],
+  "features": [
+    "Public job and organisation discovery with search and filtering",
+    "One-click apply using a CV already stored on the candidate's profile",
+    "AI-powered CV scoring with extracted skills, years of experience, and a written rationale",
+    "Real-time processing status timeline (uploaded → queued → processing → completed)",
+    "Recruiter console with AI-ranked applicant shortlists, filterable by job",
+    "Three-way recruiter decision workflow — qualified, rejected, or flagged for review — with rejection reasons visible to the applicant",
+    "Admin console for job posting CRUD with a dynamic, toggleable requirements builder",
+    "Organisation profile management with a custom key-value company overview editor",
+    "Team member management with inline role editing (recruiter/admin) and removal",
+    "Follow organisations to get notified of new postings",
+    "Role-based route protection across applicant, recruiter, and admin consoles",
+    "Async CV processing pipeline so applications never block on AI response time"
+  ],
+  "images": [
+    lockedInHome,
+    lockedInJobs,
+    lockedInOrganisation
+  ],
+  "links": {
+    "github": "https://github.com/DevMahlatsi",
+    "liveDemo": null,
+    "caseStudy": "/projects/lockedin"
+  },
+  "metrics": {
+    "consoles": 4,
+    "apiEndpoints": "25+",
+    "aiScoringCost": "<$0.001 per CV"
+  }
+  }
+  ,
     {
     "id": "l-tido-network",
     "title": "L-Tido Network",
@@ -93,7 +171,7 @@ export const projects = [
   "slug": "open-chats-podcast",
   "description": "A multi-page React website built for Open Chats Podcast — a South African youth video podcast. The site serves as a digital home base for the show, featuring live YouTube Data API v3 integration to display real-time episode listings, channel statistics, and a contact section for partnership and collaboration enquiries.",
   "shortDescription": "Podcast website with live YouTube API integration and multi-page routing.",
-  "status": "in-progress",
+  "status": "completed",
   "featured": true,
   "category": "web",
   "year": 2026,
@@ -224,7 +302,7 @@ export const projects = [
       },
       {
         "name": "Boikhutso ",
-        "role": "Database",
+        "role": "Database Designer",
         "github": "https://github.com/thabonkosi",
         "contributions": [
           "UI/UX design",

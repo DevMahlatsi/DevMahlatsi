@@ -24,7 +24,7 @@ export default function UnderConstruction() {
   return (
     <div className="banner-top fixed top-0 left-0 right-0 bg-amber-500 flex justify-between items-center p-2.5 z-50">
       <h1 className="text-center text-sm md:text-base text-white flex-1 font-medium">
-        🚧 Website under construction. Some features are still being built. 🚧
+        Website under construction. Some features are still being built.
       </h1>
       <button
         onClick={handleBanner}
