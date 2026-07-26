@@ -1,5 +1,5 @@
 import downloadCV from "../../../assets/downloadCV.svg";
-import LugisaniCV from "../../../assets/Lugisani Jeremiah Mahlatsi CV.pdf"
+import LugisaniCV from "../../../assets/Lugisani_Mahlatsi CV.pdf"
 
 export default function DownCV(){
   return(
