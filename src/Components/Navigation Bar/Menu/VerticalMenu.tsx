@@ -43,21 +43,21 @@ export default function VMenu({ isOpen, onNavClick }: VMenuProps){
       />
       
       {/* Slide-out menu - adjusted top position */}
-      <div className="fixed top-10 right-0 h-[calc(100%-2.5rem)] w-64 bg-[#0a0a0a] border-l border-[#1a73e8]/30 shadow-2xl z-50 md:hidden animate-slide-in">
-        
+      <div className="fixed top-10 right-0 h-[calc(100%-2.5rem)] w-64 bg-[var(--bg-raised)] border-l border-[var(--border)] z-50 md:hidden animate-slide-in">
+
         {/* Header with logo and close */}
-        <div className="flex justify-between items-center p-5 border-b border-gray-800">
-          <div className="text-xl font-bold bg-gradient-to-r from-[#1a73e8] to-white bg-clip-text text-transparent">
-            DevMahlatsi
+        <div className="flex justify-between items-center p-5 border-b border-[var(--border)]">
+          <div className="text-xl font-bold text-[var(--text-primary)]">
+            ~/root
           </div>
-          <button 
+          <button
             onClick={() => onNavClick('')}
-            className="text-gray-400 hover:text-white transition-colors text-2xl"
+            className="text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors text-2xl"
           >
             ✕
           </button>
         </div>
-        
+
         {/* Navigation Links */}
         <nav className="flex flex-col py-4 overflow-y-auto h-[calc(100%-120px)]">
           {menuData.map((menu, index) => {
@@ -71,9 +71,9 @@ export default function VMenu({ isOpen, onNavClick }: VMenuProps){
                     onNavClick('');
                   }
                 }}
-                className="text-left px-6 py-4 text-gray-300 hover:text-[#1a73e8] hover:bg-white/5 transition-all duration-200 border-l-2 border-transparent hover:border-[#1a73e8]"
+                className="text-left px-6 py-4 text-[var(--text-muted)] hover:text-[var(--accent-mono)] hover:bg-white/5 transition-all duration-200 border-l-2 border-transparent hover:border-[var(--accent-mono)]"
               >
-                <span className="text-sm font-medium">{menu.title}</span>
+                <span className="text-sm font-medium">{menu.title.toLowerCase()}</span>
               </button>
             )
           })}

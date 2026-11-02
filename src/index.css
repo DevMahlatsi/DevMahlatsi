@@ -1,53 +1,81 @@
 @import "tailwindcss";
 
+:root{
+  --bg: #0a0a0b;
+  --bg-raised: #0e0e10;
+  --border: #1a1b1e;
+  --border-strong: #2a2c31;
+  --text-primary: #eceef0;
+  --text-body: #c9cdd3;
+  --text-muted: #8a8f98;
+  --text-dim: #45484e;
+  --accent: #5c2a2a;
+  --accent-mono: #7fae8f;
+}
+
 html{
   margin-left: 10px ;
   margin-right: 10px;
-  /* font-family:Arial, Helvetica, sans-serif; */
-  background-color: black;
-  /* color: #1a73e8; */
-  color: white;
-  /* font-size: 7em; */
+  font-family: "JetBrains Mono", "IBM Plex Mono", "Berkeley Mono", monospace;
+  background-color: var(--bg);
+  color: var(--text-body);
 }
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* wordmark / name */
 .name-deco{
-  /* font-size: 3rem; */
-  
-  background: -webkit-linear-gradient(left, #1a73e8, rgba(255, 255, 255, 0.81));
-  -webkit-background-clip: text;
-  
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
 }
+
 .hero-buttons{
-  border-radius: 2rem;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  gap: 1rem;
+  gap: 0.75rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--border-strong);
+  color: var(--text-primary);
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
+.hero-buttons:hover{
+  border-color: var(--accent-mono);
+  color: var(--accent-mono);
+}
+
 /* stats header */
 .stats-header{
   font-size: 2rem;
-  color: #1a73e8;
+  color: var(--text-primary);
 }
 .hero-stat-heading{
   font-size: .8rem;
+  color: var(--text-muted);
 }
+
 /* About */
 .about-intro{
-  color:#1a73e8;
+  color: var(--text-primary);
+  font-weight: 700;
 }
 .about-xxx{
   padding: 1em;
-  border: solid #1a73e8 0.1rem;
-  border-radius: .5rem;
+  border: solid var(--border) 1px;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--bg-raised) !important;
 }
-/* headings used through out the site */
+
+/* section labels used throughout the site */
 .page-heading{
   display: flex;
   justify-content: center;
@@ -55,83 +83,79 @@ html{
 .heading-description{
   display: inline-flex;
   gap: .5rem;
-  /* align-items: center; */
-  border-radius: 2rem;
-  border-color: #1a73e8;
-  color: #1a73e8;
-  border-width: 2px;
-  padding: .25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 0.875rem;
+  align-items: center;
+  color: var(--accent-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
 }
+.heading-description h1{
+  font-size: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
+
 /* styling for form input */
 .edtInput{
-  background-color: #272727;
-  border-radius: 15px;
-  border-color: #808080;
-  /* color: #1a73e8; */
-  border-width: 2px;
+  background-color: var(--bg-raised);
+  border-radius: 3px;
+  border-color: var(--border-strong);
+  color: var(--text-body);
+  border-width: 1px;
   padding: 2px;
-  padding-left: 5px;
+  padding-left: 8px;
   padding-right: 5px;
   font-size: 0.875rem;
   height: 35px;
-
 }
 .edtInput:focus{
-  border: solid 2px #1a73e8;
+  border: solid 1px var(--accent-mono);
   outline: none;
-  
-  
 }
 .edtInput2{
-  background-color: #272727;
-  border-radius: 15px;
-  border-color: #808080;
-  /* color: #1a73e8; */
-  border-width: 2px;
+  background-color: var(--bg-raised);
+  border-radius: 3px;
+  border-color: var(--border-strong);
+  color: var(--text-body);
+  border-width: 1px;
   padding: 2px;
-  padding-left: 5px;
+  padding-left: 8px;
   padding-right: 5px;
   font-size: 0.875rem;
-  /* height: 30px; */
-
 }
 .edtInput2:focus{
-  border: solid 2px #1a73e8;
+  border: solid 1px var(--accent-mono);
   outline: none;
-  
-  
 }
 
 .lblForm{
   font-size: 1rem;
+  color: var(--text-muted);
 }
 .lblnEdt{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-/* Lets connect styling  */
-/* React icons for Let's connect */
+
+/* Let's connect styling */
 .parent{
-  background-color: #272727;
-  border-radius: 1rem;
+  background-color: var(--bg-raised);
+  border-radius: 3px;
   display: flex;
   gap: 1rem;
   padding: .5rem;
 }
 .lc-icon-parent{
-  background-color: #1a73e8;
+  background-color: var(--bg-raised);
+  border: 1px solid var(--border-strong);
   display: inline-block;
   padding: .5rem;
-  border-radius: 100%;
+  border-radius: 3px;
 }
 .lc-icon{
-  /* background-color: ; */
-
   height: 2rem;
   width: 2rem;
-  
 }

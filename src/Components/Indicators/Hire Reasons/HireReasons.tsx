@@ -4,14 +4,14 @@ export default function HireReasons(){
   return(
     <>
     <div className="flex justify-center">
-      <div className=" inline-grid  justify-center items-center gap-2 border border-[#1a73e8] rounded-xl p-5">
+      <div className=" inline-grid  justify-center items-center gap-2 border border-[var(--border)] rounded-[3px] p-5 bg-[var(--bg-raised)]">
         {hireReasons.map((reason) => {
           return(
           <div>
-            <div className="flex gap-2 px-2 py-3 items-center rounded-xl bg-[#272727]">
-                <img 
-                  className="max-h-14 min-h-9 p-2 rounded-full bg-[#1a73e8]"
-                  src={reason.icon} 
+            <div className="flex gap-2 px-2 py-3 items-center rounded-[3px] bg-[var(--bg)]">
+                <img
+                  className="max-h-14 min-h-9 p-2 opacity-50"
+                  src={reason.icon}
                   alt={reason.title}/>
 
                 <div>
@@ -20,13 +20,13 @@ export default function HireReasons(){
                     {reason.title}
                   </strong>
                 </h1>
-                <p className="text-sm">
+                <p className="text-sm text-[var(--text-muted)]">
                   {reason.description}
                 </p>
                 </div>
               </div>
           </div>
-              
+
           )
         })}
       </div>

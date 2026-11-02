@@ -37,23 +37,23 @@ export default function ContactForm() {
 
   return (
     <div>
-      <form ref={formRef} onSubmit={sendEmail} className="flex flex-col gap-4 border border-[#1a73e8] p-4 rounded-2xl">
-        
+      <form ref={formRef} onSubmit={sendEmail} className="flex flex-col gap-4 border border-[var(--border)] p-4 rounded-[3px] bg-[var(--bg-raised)]">
+
         {status.type === "success" && (
-          <div className="bg-green-500/20 border border-green-500 text-green-400 p-3 rounded-xl text-sm">
+          <div className="bg-green-500/10 border border-green-500/40 text-green-400 p-3 rounded-[3px] text-sm">
             {status.message}
           </div>
         )}
-        
+
         {status.type === "error" && (
-          <div className="bg-red-500/20 border border-red-500 text-red-400 p-3 rounded-xl text-sm">
+          <div className="bg-red-500/10 border border-red-500/40 text-red-400 p-3 rounded-[3px] text-sm">
             {status.message}
           </div>
         )}
 
         <div className="lblnEdt">
           <label className="lblForm" htmlFor="user_name">
-            Your Name:
+            name
           </label>
           <input
             placeholder="John Doe"
@@ -67,7 +67,7 @@ export default function ContactForm() {
 
         <div className="lblnEdt">
           <label className="lblForm" htmlFor="user_email">
-            Email Address:
+            email
           </label>
           <input
             placeholder="JohnDoe@email.com"
@@ -81,9 +81,9 @@ export default function ContactForm() {
 
         <div className="lblnEdt">
           <label className="lblForm" htmlFor="project_type">
-            Project Type:
+            project type
           </label>
-          <select className="edtInput bg-[#272727]" name="project_type" id="project_type" required>
+          <select className="edtInput bg-[var(--bg-raised)]" name="project_type" id="project_type" required>
             {projectTypes.map((type) => (
               <option key={type.id} value={type.value}>
                 {type.name}
@@ -93,7 +93,7 @@ export default function ContactForm() {
         </div>
 
         <div className="lblnEdt">
-          <label htmlFor="message">Message</label>
+          <label className="lblForm" htmlFor="message">what do you need built</label>
           <textarea
             placeholder="Describe the selected project from above a bit more."
             className="edtInput2"
@@ -106,11 +106,11 @@ export default function ContactForm() {
 
         <div className="flex justify-center">
           <button
-            className="w-full p-2 rounded-2xl bg-[#1a73e8] flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full p-2 rounded-[3px] border border-[var(--border-strong)] hover:border-[var(--accent-mono)] hover:text-[var(--accent-mono)] flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             type="submit"
             disabled={isSending}
           >
-            <span>{isSending ? "Sending..." : "Submit"}</span>
+            <span>{isSending ? "sending..." : "send →"}</span>
             <IoIosSend />
           </button>
         </div>

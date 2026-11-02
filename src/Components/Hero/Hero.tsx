@@ -9,12 +9,11 @@ export default function Hero(){
   // Typing animation state
   const roles = [
   "Full Stack Developer",
-  "Next.js Builder",
-  "API Integrator",
-  "Systems Thinker",
-  "Automation Enthusiast",
-  "Real-World Problem Solver",
-  "Startup-Minded Developer"
+  "Backend Engineer",
+  "The One Who Reads the Docs",
+  "Not Here to Network",
+  "Occasionally Wrong. Rarely Unsure.",
+  "Writes Tests When It Matters"
 ];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -48,55 +47,42 @@ export default function Hero(){
 
   return(
     <>
-      <div className="grid sm:grid-cols-2 text-[#ffffff] gap-8 items-center">
+      <p className="text-xs tracking-[0.2em] uppercase text-[#5c2a2a] mb-2">status: shipping. questions after.</p>
+      <div className="grid sm:grid-cols-2 text-[var(--text-primary)] gap-8 items-center">
         {/* Left side - Content */}
         <div>
-          <h1 className="text-5xl md:text-7xl">
-            Hi, I'm <span className="name-deco">{name}</span>
-          </h1>
-          <br />
-          <h3 className="text-2xl md:text-3xl">
-            <span className="border-r-2 border-[#1a73e8] pr-1">
+          <p className="text-sm text-[var(--text-muted)] uppercase tracking-widest mb-1">{name}</p>
+          <h1 className="text-4xl md:text-6xl leading-tight">
+            <span className="border-r-2 border-[var(--border-strong)] pr-1">
               {currentText}
             </span>
-            <span className="animate-pulse text-[#1a73e8]">|</span>
-          </h3>
+            <span className="animate-pulse text-[var(--accent-mono)]">|</span>
+          </h1>
           <br />
-          <p className="text-gray-300">
-            I solve problems with code, learning new tech and continuously improve my skills.
-            <br />
-            Currently seeking a Work Integrated Learning (WIL) or Software Development Internship.
+          <p className="text-[var(--text-body)]">
+            Django, Next.js, React Native, whatever the problem actually needs. If your last developer left you with a pile of unfinished tickets, that's not my problem to feel bad about — it's the one I fix.
           </p>
         </div>
-        
-        {/* Right side - Now with content! */}
+
+        {/* Right side - terminal card */}
         <div className="flex justify-center items-center">
           <div className="relative">
-            {/* Decorative code bracket */}
-            <div className="absolute -top-6 -left-6 text-6xl text-[#1a73e8]/20 font-mono">{`<`}</div>
-            
-            {/* Code card */}
-            <div className="bg-[#1a1a1a] border border-[#1a73e8]/30 rounded-2xl p-6 shadow-2xl shadow-[#1a73e8]/10">
-              <div className="flex gap-2 mb-4">
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+            <div className="bg-[var(--bg-raised)] border border-[var(--border)] rounded-[3px] p-6">
+              <div className="flex gap-2 mb-4 text-[10px] uppercase tracking-widest text-[var(--text-dim)]">
+                ~/root
               </div>
               <div className="font-mono text-sm">
-                <p className="text-[#1a73e8]">const <span className="text-white">developer</span> = {"{"}</p>
-                <p className="ml-4 text-gray-300">name: <span className="text-green-400">"Lugisani"</span>,</p>
-                <p className="ml-4 text-gray-300">role: <span className="text-yellow-400">"Full Stack"</span>,</p>
-                <p className="ml-4 text-gray-300">passion: <span className="text-pink-400">"Building things that matter"</span>,</p>
-                <p className="text-white">{"}"};</p>
+                <p className="text-[var(--text-muted)]">const <span className="text-[var(--text-primary)]">developer</span> = {"{"}</p>
+                <p className="ml-4 text-[var(--text-body)]">name: <span className="text-[var(--text-primary)]">"Lugisani"</span>,</p>
+                <p className="ml-4 text-[var(--text-body)]">role: <span className="text-[var(--text-primary)]">"Full Stack"</span>,</p>
+                <p className="ml-4 text-[var(--text-body)]">opinions: <span className="text-[var(--text-primary)]">"correct"</span>,</p>
+                <p className="text-[var(--text-primary)]">{"}"};</p>
                 <br />
-                <p className="text-gray-400 animate-pulse">
-                  <span className="text-[#1a73e8]">&gt;</span> developer.work()
+                <p className="text-[var(--accent-mono)] animate-pulse">
+                  &gt; developer.work()
                 </p>
               </div>
             </div>
-            
-            {/* Decorative code bracket */}
-            <div className="absolute -bottom-6 -right-6 text-6xl text-[#1a73e8]/20 font-mono">{`/>`}</div>
           </div>
         </div>
       </div>
@@ -105,6 +91,7 @@ export default function Hero(){
         <ViewWork/>
         <DownCV/>
       </div>
+      <p className="text-xs text-[var(--text-dim)] italic mt-2">(it's good. that's not up for discussion.)</p>
       <br />
       <div>
         <HeroStats/>

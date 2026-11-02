@@ -7,17 +7,17 @@ export default function ProcessDesign(){
         {designProcess.map((process) => {
           return(
             <>
-            <div className="border border-[#1a73e8] rounded-2xl p-4 w-65">
-              <div className="bg-[#1a73e8] inline-block rounded-2xl">
-                <h1 className="text-xl p-2 px-4 ">
-                  {process.id}
+            <div className="border border-[var(--border)] rounded-[3px] p-4 w-65 bg-[var(--bg-raised)]">
+              <div className="inline-block">
+                <h1 className="text-xl p-2 px-0 text-[var(--accent-mono)]">
+                  0{process.id}
                 </h1>
               </div>
               <div><h1>
                 {process.title}
                 </h1></div>
               <div>
-                <p>
+                <p className="text-[var(--text-muted)]">
                   {process.description}
                 </p>
               </div>

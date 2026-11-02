@@ -6,22 +6,19 @@ export default function ToolsAndTechnologies(){
       
       <div>
         <div>
-          <h1>
-            Tools & Technologies
-          </h1>
+          <p className="text-xs tracking-[0.2em] uppercase text-[var(--accent-mono)] font-bold">
+            02 — WHAT I ACTUALLY USE
+          </p>
           <br/>
         </div>
         <div>
-          <ul className="flex flex-wrap gap-3 ">
-            {techToolsData.map((tool) => {
-              return(
-                <li key={tool.id} className="text-sm p-1 px-2 bg-[#272727] border border-[#1a73e8] rounded-4xl tech-edit">
-                  
-                  {tool.title}
-                </li>
-              )
-            })}
-          </ul>
+          <p className="text-sm text-[var(--text-body)] flex flex-wrap gap-x-2">
+            {techToolsData.map((tool, index) => (
+              <span key={tool.id}>
+                {tool.title}{index < techToolsData.length - 1 ? " ·" : ""}
+              </span>
+            ))}
+          </p>
         </div>
       </div>
     </>

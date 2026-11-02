@@ -43,7 +43,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
       />
       
       {/* Modal */}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0a0a0a] border border-[#1a73e8]/30 rounded-2xl z-50 shadow-2xl">
+      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-4xl max-h-[90vh] overflow-y-auto bg-[var(--bg-raised)] border border-[var(--border)] rounded-[3px] z-50">
         
         {/* Close button */}
         <button 
@@ -93,7 +93,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   href={project.links.github} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-[#1a73e8] hover:text-white transition-colors text-sm md:text-base"
+                  className="text-[var(--accent-mono)] hover:text-[var(--text-primary)] transition-colors text-sm md:text-base"
                 >
                   GitHub →
                 </a>
@@ -103,7 +103,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   href={project.links.liveDemo} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="bg-[#1a73e8] px-3 py-1.5 md:px-4 md:py-2 rounded-lg hover:bg-[#0d5bbf] transition-colors text-sm md:text-base"
+                  className="border border-[var(--border-strong)] px-3 py-1.5 md:px-4 md:py-2 rounded-[3px] hover:border-[var(--accent-mono)] hover:text-[var(--accent-mono)] transition-colors text-sm md:text-base"
                 >
                   Live Demo →
                 </a>
@@ -112,30 +112,23 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
           
           {/* Meta */}
-          <div className="flex flex-wrap gap-3 md:gap-4 text-xs md:text-sm text-gray-400 mb-6 pb-4 border-b border-gray-800">
+          <div className="flex flex-wrap gap-3 md:gap-4 text-xs md:text-sm text-[var(--text-muted)] mb-6 pb-4 border-b border-[var(--border)]">
             <span className="capitalize">{project.category}</span>
             <span>{project.year}</span>
             {project.duration && <span>{project.duration}</span>}
-            <span className={`px-2 py-0.5 rounded-full text-xs ${
-              project.status === 'completed' 
-                ? 'bg-green-500/20 text-green-400' 
-                : project.status === 'in-progress'
-                ? 'bg-yellow-500/20 text-yellow-400'
-                : 'bg-gray-500/20 text-gray-400'
+            <span className={`px-2 py-0.5 rounded-[3px] border text-xs ${
+              project.status === 'completed'
+                ? 'border-[var(--accent-mono)] text-[var(--accent-mono)]'
+                : 'border-[var(--border-strong)] text-[var(--text-muted)]'
             }`}>
               {project.status === 'in-progress' ? 'IN PROGRESS' : project.status.toUpperCase()}
             </span>
-            {project.featured && (
-              <span className="px-2 py-0.5 rounded-full text-xs bg-yellow-500/20 text-yellow-400">
-                FEATURED
-              </span>
-            )}
           </div>
           
           {/* Problem */}
           {project.problem && (
             <div className="mb-6">
-              <h3 className="text-base md:text-lg font-bold text-[#1a73e8] mb-2">The Problem</h3>
+              <h3 className="text-base md:text-lg font-bold text-[var(--accent-mono)] mb-2">The Problem</h3>
               <p className="text-sm md:text-base text-gray-300 leading-relaxed">{project.problem}</p>
             </div>
           )}
@@ -143,7 +136,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Solution */}
           {project.solution && (
             <div className="mb-6">
-              <h3 className="text-base md:text-lg font-bold text-[#1a73e8] mb-2">The Solution</h3>
+              <h3 className="text-base md:text-lg font-bold text-[var(--accent-mono)] mb-2">The Solution</h3>
               <p className="text-sm md:text-base text-gray-300 leading-relaxed">{project.solution}</p>
             </div>
           )}
@@ -151,7 +144,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* My Role */}
           {project.team.role && (
             <div className="mb-6">
-              <h3 className="text-base md:text-lg font-bold text-[#1a73e8] mb-2">My Role</h3>
+              <h3 className="text-base md:text-lg font-bold text-[var(--accent-mono)] mb-2">My Role</h3>
               <p className="text-sm md:text-base text-gray-300 mb-2">{project.team.role}</p>
               {project.team.responsibilities && project.team.responsibilities.length > 0 && (
                 <ul className="list-disc list-inside text-sm md:text-base text-gray-300 space-y-1">
@@ -166,7 +159,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Full Tech Stack */}
           {project.techStack && project.techStack.length > 0 && (
             <div className="mb-6">
-              <h3 className="text-base md:text-lg font-bold text-[#1a73e8] mb-2">Tech Stack</h3>
+              <h3 className="text-base md:text-lg font-bold text-[var(--accent-mono)] mb-2">Tech Stack</h3>
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech) => (
                   <span key={tech} className="px-2 py-1 md:px-3 md:py-1 bg-gray-800 rounded-full text-xs md:text-sm text-gray-300">
@@ -180,7 +173,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Key Features */}
           {project.features && project.features.length > 0 && (
             <div className="mb-6">
-              <h3 className="text-base md:text-lg font-bold text-[#1a73e8] mb-2">Key Features</h3>
+              <h3 className="text-base md:text-lg font-bold text-[var(--accent-mono)] mb-2">Key Features</h3>
               <ul className="list-disc list-inside text-sm md:text-base text-gray-300 space-y-1">
                 {project.features.slice(0, 8).map((feature, i) => (
                   <li key={i}>{feature}</li>
@@ -194,8 +187,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           
           {/* Metrics / Results */}
           {project.metrics && Object.keys(project.metrics).length > 0 && (
-            <div className="mb-6 p-4 bg-[#1a73e8]/10 rounded-xl border border-[#1a73e8]/20">
-              <h3 className="text-base md:text-lg font-bold text-[#1a73e8] mb-3">Key Results</h3>
+            <div className="mb-6 p-4 bg-[var(--bg)] rounded-[3px] border border-[var(--border)]">
+              <h3 className="text-base md:text-lg font-bold text-[var(--accent-mono)] mb-3">Key Results</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {Object.entries(project.metrics).map(([key, value]) => (
                   <div key={key}>

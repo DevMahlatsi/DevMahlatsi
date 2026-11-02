@@ -17,11 +17,11 @@ export default function About(){
         <div>
           <div>
             <p>
-              I am a <span className="about-intro">full stack software developer </span> passionate about building smooth, responsive <span className="about-intro">web and mobile</span> experiences. I love solving <span className="about-intro">real problems</span>  with code and learning new technologies as I go.
+              I build the full stack because I don't trust handing off the parts I care about. Backend architecture, API design, database schema, the frontend that sits on top of it — one person, one coherent system, no telephone game between a designer, a backend dev, and whoever's supposed to connect them.
             </p>
             <br />
             <p>
-              Whether it's front-end, back-end, or everything in between, I'm all about creating things that work and feel good. When I'm not coding, I'm probably exploring ideas, vibing to music, or planning what to build next. Let's connect and make something awesome.
+              I've led a 9-person team and built solo projects end to end. Both went fine. The difference was how many standups it took.
             </p>
           </div>
           <br />

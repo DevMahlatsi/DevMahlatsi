@@ -47,43 +47,43 @@ export default function Portfolio() {
         <div className="flex flex-wrap justify-center gap-2 mb-4">
           <button
             onClick={() => setFilter("all")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${
-              filter === "all" 
-                ? "bg-[#1a73e8] text-white shadow-lg shadow-[#1a73e8]/30" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-[3px] text-xs md:text-sm font-medium border transition-colors ${
+              filter === "all"
+                ? "border-[var(--accent-mono)] text-[var(--accent-mono)]"
+                : "border-[var(--border)] text-[var(--text-muted)] hover:border-[var(--border-strong)]"
             }`}
           >
-            All ({statusCounts.all})
+            all ({statusCounts.all})
           </button>
           <button
             onClick={() => setFilter("completed")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${
-              filter === "completed" 
-                ? "bg-[#1a73e8] text-white shadow-lg shadow-[#1a73e8]/30" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-[3px] text-xs md:text-sm font-medium border transition-colors ${
+              filter === "completed"
+                ? "border-[var(--accent-mono)] text-[var(--accent-mono)]"
+                : "border-[var(--border)] text-[var(--text-muted)] hover:border-[var(--border-strong)]"
             }`}
           >
-            Completed ({statusCounts.completed})
+            completed ({statusCounts.completed})
           </button>
           <button
             onClick={() => setFilter("in-progress")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${
-              filter === "in-progress" 
-                ? "bg-[#1a73e8] text-white shadow-lg shadow-[#1a73e8]/30" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-[3px] text-xs md:text-sm font-medium border transition-colors ${
+              filter === "in-progress"
+                ? "border-[var(--accent-mono)] text-[var(--accent-mono)]"
+                : "border-[var(--border)] text-[var(--text-muted)] hover:border-[var(--border-strong)]"
             }`}
           >
-            In Progress ({statusCounts["in-progress"]})
+            in progress ({statusCounts["in-progress"]})
           </button>
           <button
             onClick={() => setFilter("planned")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${
-              filter === "planned" 
-                ? "bg-[#1a73e8] text-white shadow-lg shadow-[#1a73e8]/30" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-[3px] text-xs md:text-sm font-medium border transition-colors ${
+              filter === "planned"
+                ? "border-[var(--accent-mono)] text-[var(--accent-mono)]"
+                : "border-[var(--border)] text-[var(--text-muted)] hover:border-[var(--border-strong)]"
             }`}
           >
-            Planned ({statusCounts.planned})
+            planned ({statusCounts.planned})
           </button>
         </div>
 
@@ -91,53 +91,53 @@ export default function Portfolio() {
         <div className="flex flex-wrap justify-center gap-2 mb-8">
           <button
             onClick={() => setCategoryFilter("all")}
-            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-md text-[10px] md:text-xs font-medium transition-all ${
-              categoryFilter === "all" 
-                ? "bg-[#1a73e8]/20 text-[#1a73e8] border border-[#1a73e8]" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-[3px] text-[10px] md:text-xs font-medium border transition-colors ${
+              categoryFilter === "all"
+                ? "border-[var(--accent)] text-[var(--text-primary)]"
+                : "border-[var(--border)] text-[var(--text-dim)] hover:border-[var(--border-strong)]"
             }`}
           >
-            All ({categoryCounts.all})
+            all ({categoryCounts.all})
           </button>
           <button
             onClick={() => setCategoryFilter("web")}
-            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-md text-[10px] md:text-xs font-medium transition-all ${
-              categoryFilter === "web" 
-                ? "bg-[#1a73e8]/20 text-[#1a73e8] border border-[#1a73e8]" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-[3px] text-[10px] md:text-xs font-medium border transition-colors ${
+              categoryFilter === "web"
+                ? "border-[var(--accent)] text-[var(--text-primary)]"
+                : "border-[var(--border)] text-[var(--text-dim)] hover:border-[var(--border-strong)]"
             }`}
           >
-            Web ({categoryCounts.web})
+            web ({categoryCounts.web})
           </button>
           <button
             onClick={() => setCategoryFilter("mobile")}
-            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-md text-[10px] md:text-xs font-medium transition-all ${
-              categoryFilter === "mobile" 
-                ? "bg-[#1a73e8]/20 text-[#1a73e8] border border-[#1a73e8]" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-[3px] text-[10px] md:text-xs font-medium border transition-colors ${
+              categoryFilter === "mobile"
+                ? "border-[var(--accent)] text-[var(--text-primary)]"
+                : "border-[var(--border)] text-[var(--text-dim)] hover:border-[var(--border-strong)]"
             }`}
           >
-            Mobile ({categoryCounts.mobile})
+            mobile ({categoryCounts.mobile})
           </button>
           <button
             onClick={() => setCategoryFilter("iot")}
-            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-md text-[10px] md:text-xs font-medium transition-all ${
-              categoryFilter === "iot" 
-                ? "bg-[#1a73e8]/20 text-[#1a73e8] border border-[#1a73e8]" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-[3px] text-[10px] md:text-xs font-medium border transition-colors ${
+              categoryFilter === "iot"
+                ? "border-[var(--accent)] text-[var(--text-primary)]"
+                : "border-[var(--border)] text-[var(--text-dim)] hover:border-[var(--border-strong)]"
             }`}
           >
-            IoT ({categoryCounts.iot})
+            iot ({categoryCounts.iot})
           </button>
           <button
             onClick={() => setCategoryFilter("ai")}
-            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-md text-[10px] md:text-xs font-medium transition-all ${
-              categoryFilter === "ai" 
-                ? "bg-[#1a73e8]/20 text-[#1a73e8] border border-[#1a73e8]" 
-                : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-[3px] text-[10px] md:text-xs font-medium border transition-colors ${
+              categoryFilter === "ai"
+                ? "border-[var(--accent)] text-[var(--text-primary)]"
+                : "border-[var(--border)] text-[var(--text-dim)] hover:border-[var(--border-strong)]"
             }`}
           >
-            AI ({categoryCounts.ai})
+            ai ({categoryCounts.ai})
           </button>
         </div>
 
@@ -159,12 +159,12 @@ export default function Portfolio() {
         {filteredProjects.length === 0 && (
           <div className="text-center py-12">
             <p className="text-gray-500">No projects match the selected filters.</p>
-            <button 
+            <button
               onClick={() => {
                 setFilter("all");
                 setCategoryFilter("all");
               }}
-              className="mt-4 text-[#1a73e8] hover:underline"
+              className="mt-4 text-[var(--accent-mono)] hover:underline"
             >
               Clear filters
             </button>

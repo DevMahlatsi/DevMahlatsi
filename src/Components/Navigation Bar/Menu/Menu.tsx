@@ -22,13 +22,13 @@ export default function Menu({ onNavClick }: MenuProps){
       <ul className="flex items-center text-sm md:text-xl md:gap-16 gap-5">
         {menuData.map((menu, index) => {
           return(
-            <li 
-              key={index} 
+            <li
+              key={index}
               onClick={() => onNavClick(getSectionId(menu.title))}
-              className="cursor-pointer font-medium text-white transition-all duration-300 
-                       hover:scale-105 hover:text-[#1a73e8] hover:drop-shadow-[0_0_8px_rgba(26,115,232,0.8)]"
+              className="cursor-pointer font-medium text-[var(--text-muted)] transition-colors duration-200
+                       hover:text-[var(--accent-mono)]"
             >
-              {menu.title.toUpperCase()}
+              {menu.title.toLowerCase()}
             </li>
           )
         })}

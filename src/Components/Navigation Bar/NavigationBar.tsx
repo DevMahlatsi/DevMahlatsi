@@ -41,10 +41,10 @@ export default function NavigationBar(){
 
   return(
     <>
-      <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled ? 'bg-black/90 backdrop-blur-md shadow-lg' : 'bg-[rgba(63,63,63,0.62)] backdrop-blur-sm'
+      <header className={`fixed top-0 left-0 right-0 z-40 border-b border-[var(--border)] transition-colors duration-300 ${
+        scrolled ? 'bg-[var(--bg)]' : 'bg-[var(--bg)]/90'
       }`}>
-        <div className="flex justify-between px-4 md:px-7 items-center py-3 md:py-4">
+        <div className="flex justify-between px-4 md:px-7 items-center py-3">
           <Logo/>
           <div className="hidden md:block">
             <Menu onNavClick={handleNavClick}/>

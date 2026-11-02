@@ -23,10 +23,10 @@ export default function Available(){
   }
   return(
     <> 
-      <div className="text-sm inline-flex items-center rounded-4xl border-[#1a73e8] border-2 p-2 px-5 gap-2 my-6 bg-[#1a73e8]/10">
-          <img className="h-6" src={blueWork} alt="work icon" />
-          <h1 className="font-medium">
-            Available for Software Development Opportunities
+      <div className="text-sm inline-flex items-center rounded-[3px] border border-[var(--border)] p-2 px-4 gap-2 my-6 bg-[var(--bg-raised)]">
+          <img className="h-4 opacity-30" src={blueWork} alt="" />
+          <h1 className="font-medium text-[var(--text-muted)]">
+            status: taking on work. don't make it weird.
           </h1>
         </div>
     </>
